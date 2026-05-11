@@ -1,0 +1,31 @@
+{
+  "pres1": {
+    "title": "ISHAM Pre-meeting",
+    "abstract": "",
+    "type": "talk",
+    "track": "meeting",
+    "day": "0",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "presenterId": "",
+    "presenterFirstName": "",
+    "presenterLastNames": "",
+    "presenterEmail": "",
+    "presenterHeadshot": ""
+  },
+  "pres2": {
+    "title": "Keynote",
+    "abstract": "",
+    "type": "talk",
+    "track": "special",
+    "day": "0",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "presenterId": "p1",
+    "presenterFirstName": "Joe",
+    "presenterLastNames": "Jarvis",
+    "presenterEmail": "drjoejarvis@gmail.com",
+    "presenterHeadshot": "joe_jarvis.jpeg"
+  }
+}
+
