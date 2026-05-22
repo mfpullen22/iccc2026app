@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import "package:forui/forui.dart";
+import "package:iccc2026/schedule_screen.dart";
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -43,12 +44,18 @@ class HomeScreen extends StatelessWidget {
                 crossAxisSpacing: 12,
                 childAspectRatio: 1.35,
                 children: [
-                  _HomeNavCard(
-                    icon: FIcons.calendarDays,
-                    title: "Schedule",
-                    subtitle: "View sessions",
-                    onTap: () {},
-                  ),
+_HomeNavCard(
+  icon: FIcons.calendarDays,
+  title: "Schedule",
+  subtitle: "View sessions",
+  onTap: () {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => const ScheduleScreen(),
+      ),
+    );
+  },
+),
                   _HomeNavCard(
                     icon: FIcons.users,
                     title: "Presenters",

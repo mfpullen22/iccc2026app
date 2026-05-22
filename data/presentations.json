@@ -3017,7 +3017,8 @@
     "day": "4",
     "startTime": "17:00",
     "endTime": "17:15",
-    "presenterId": "Edward",
+    "presenterId": "",
+    "presenterFirstName": "Edward",
     "presenterLastNames": "Wallace",
     "presenterEmail": "edward.wallace@ed.ac.uk",
     "presenterHeadshot": ""
