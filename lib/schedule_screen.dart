@@ -30,9 +30,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   }
 
   Future<List<Presentation>> _loadPresentations() async {
-    final jsonString = await rootBundle.loadString(
-      "data/presentations.json",
-    );
+    final jsonString = await rootBundle.loadString("data/presentations.json");
 
     final decoded = jsonDecode(jsonString) as Map<String, dynamic>;
 
@@ -59,9 +57,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Schedule"),
-      ),
+      appBar: AppBar(title: const Text("Schedule")),
       body: SafeArea(
         child: FutureBuilder<List<Presentation>>(
           future: _presentationsFuture,
@@ -127,6 +123,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     ],
                   ),
                 ),
+                const _TrackLegend(),
                 Expanded(
                   child: ListView.builder(
                     padding: const EdgeInsets.fromLTRB(12, 8, 12, 24),
@@ -160,9 +157,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 8),
                                       child: _ScheduleCard(
-  presentation: presentation,
-  itemsInRow: presentations.length,
-),
+                                        presentation: presentation,
+                                        itemsInRow: presentations.length,
+                                      ),
                                     ),
                                   );
                                 }).toList(),
@@ -183,11 +180,58 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   }
 }
 
+class _TrackLegend extends StatelessWidget {
+  const _TrackLegend();
+
+  @override
+  Widget build(BuildContext context) {
+    const items = [
+      _LegendItem("Clinical Advances", Colors.grey),
+      _LegendItem("Drugs", Colors.yellow),
+      _LegendItem("Genomics", Colors.orange),
+      _LegendItem("Host-Pathogen", Colors.purpleAccent),
+      _LegendItem("Immunology", Colors.pink),
+      _LegendItem("Cell Biology", Colors.lightBlue),
+      _LegendItem("Special / Meals", Colors.greenAccent),
+    ];
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 4, 16, 12),
+      child: Wrap(
+        spacing: 10,
+        runSpacing: 8,
+        alignment: WrapAlignment.center,
+        children: items.map((item) {
+          return Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 12,
+                height: 12,
+                decoration: BoxDecoration(
+                  color: item.color.withValues(alpha: 0.85),
+                  borderRadius: BorderRadius.circular(4),
+                ),
+              ),
+              const SizedBox(width: 4),
+              Text(item.label, style: const TextStyle(fontSize: 11)),
+            ],
+          );
+        }).toList(),
+      ),
+    );
+  }
+}
+
+class _LegendItem {
+  const _LegendItem(this.label, this.color);
+
+  final String label;
+  final Color color;
+}
+
 class _ScheduleCard extends StatelessWidget {
-  const _ScheduleCard({
-    required this.presentation,
-    required this.itemsInRow,
-  });
+  const _ScheduleCard({required this.presentation, required this.itemsInRow});
 
   final Presentation presentation;
   final int itemsInRow;
@@ -317,7 +361,7 @@ class Presentation {
       case "genomics":
         return Colors.orange;
       case "hostpathogen":
-        return Colors.purple;
+        return Colors.purpleAccent;
       case "immunology":
         return Colors.pink;
       case "cellbio":
