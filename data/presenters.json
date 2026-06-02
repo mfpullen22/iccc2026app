@@ -1,0 +1,1304 @@
+{
+  "presenter1": {
+    "id": "presenter1",
+    "firstName": "Claudia",
+    "lastName": "A. Petrucco",
+    "email": "cap93@duke.edu",
+    "affiliation": ["Department of Biology, Duke University"]
+  },
+  "presenter2": {
+    "id": "presenter2",
+    "firstName": "Daniel",
+    "lastName": "A. Santos",
+    "email": "dasufmg@gmail.com",
+    "affiliation": ["Universidade Federal de Minas Gerais"]
+  },
+  "presenter3": {
+    "id": "presenter3",
+    "firstName": "Sehrish",
+    "lastName": "Afsheen",
+    "email": "afsheen@wisc.edu",
+    "affiliation": ["Department of Biomolecular Chemistry, School of Medicine and Public Health, University of Wisconsin-Madison"]
+  },
+  "presenter4": {
+    "id": "presenter4",
+    "firstName": "Ruchi",
+    "lastName": "Agrawal",
+    "email": "ruchi.agrawal@pasteur.fr",
+    "affiliation": ["Institut Pasteur, Paris"]
+  },
+  "presenter5": {
+    "id": "presenter5",
+    "firstName": "Cynthia",
+    "lastName": "Ahimbisibwe",
+    "email": "ahicyn@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter6": {
+    "id": "presenter6",
+    "firstName": "Rahul",
+    "lastName": "Anand",
+    "email": "r.anand@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+  "presenter7": {
+    "id": "presenter7",
+    "firstName": "Alejandro",
+    "lastName": "Antonia",
+    "email": "alejandro.antonia@duke.edu",
+    "affiliation": ["Duke University Hospital"]
+  },
+  "presenter8": {
+    "id": "presenter8",
+    "firstName": "Nicolas",
+    "lastName": "Antunez de Mayolo",
+    "email": "nicolas.antunez.de.mayolo@upch.pe",
+    "affiliation": ["Universidad Peruana Cayetano Heredia"]
+  },
+  "presenter9": {
+    "id": "presenter9",
+    "firstName": "Kassandra",
+    "lastName": "Arias-Parbul",
+    "email": "kariaspa@nd.edu",
+    "affiliation": ["University of Notre Dame, Department of Biological Sciences"]
+  },
+  "presenter10": {
+    "id": "presenter10",
+    "firstName": "Priscilla",
+    "lastName": "Atim",
+    "email": "apriscilla@vt.edu",
+    "affiliation": ["Virginia Tech"]
+  },
+  "presenter11": {
+    "id": "presenter11",
+    "firstName": "Simran",
+    "lastName": "Atulkumar Patel",
+    "email": "PTLSIM004@myuct.ac.za",
+    "affiliation": ["Division of Physiological Sciences, Department of Human Biology, Faculty of Health Sciences, University of Cape Town", "Neuroscience Institute, Faculty of Health Sciences, University of Cape Town, Groote Schuur Hospital", "CMM AFRICA Medical Mycology Research Unit, Institute of Infectious Disease and Molecular Medicine, Faculty of Health Sciences, University of Cape Town"]
+  },
+  "presenter12": {
+    "id": "presenter12",
+    "firstName": "Amalia",
+    "lastName": "Awala",
+    "email": "amalia.awala@uct.ac.za",
+    "affiliation": ["Division of Physiological Sciences, Department of Human Biology, Faculty of Health Sciences, University of Cape Town", "Neuroscience Institute, Faculty of Health Sciences, University of Cape Town, Groote Schuur Hospital", "CMM AFRICA Medical Mycology Research Unit, Institute of Infectious Disease and Molecular Medicine, Faculty of Health Sciences, University of Cape Town"]
+  },
+  "presenter13": {
+    "id": "presenter13",
+    "firstName": "Marie-Gabrielle",
+    "lastName": "Ayika",
+    "email": "mayika@uoguelph.ca",
+    "affiliation": ["University of Guelph"]
+  },
+  "presenter14": {
+    "id": "presenter14",
+    "firstName": "Mayara",
+    "lastName": "Barbara da Silva",
+    "email": "mayaraba@uoguelph.ca",
+    "affiliation": ["Molecular and Cellular Biology, University of Guelph"]
+  },
+  "presenter15": {
+    "id": "presenter15",
+    "firstName": "Elizabeth",
+    "lastName": "Bayne",
+    "email": "elizabeth.bayne@ed.ac.uk",
+    "affiliation": ["School of Biological Sciences, University of Edinburgh"]
+  },
+  "presenter16": {
+    "id": "presenter16",
+    "firstName": "Elise",
+    "lastName": "Bedford",
+    "email": "ebedfo02@student.ubc.ca",
+    "affiliation": ["University of British Columbia"]
+  },
+  "presenter17": {
+    "id": "presenter17",
+    "firstName": "Rachel",
+    "lastName": "Berg-Murante",
+    "email": "rachelaberg@vt.edu",
+    "affiliation": ["Virginia Tech"]
+  },
+  "presenter18": {
+    "id": "presenter18",
+    "firstName": "Blake",
+    "lastName": "Billmyre",
+    "email": "blake.billmyre@uga.edu",
+    "affiliation": ["University of Georgia"]
+  },
+  "presenter19": {
+    "id": "presenter19",
+    "firstName": "Bruno",
+    "lastName": "Borges",
+    "email": "bmborges@vt.edu",
+    "affiliation": ["Department of Biomedical Sciences and Pathobiology, Virginia Tech"]
+  },
+  "presenter20": {
+    "id": "presenter20",
+    "firstName": "Michael",
+    "lastName": "Boucher",
+    "email": "michael.boucher@health.ny.gov",
+    "affiliation": ["Division of Infectious Diseases, Wadsworth Center, New York State Department of Health"]
+  },
+  "presenter21": {
+    "id": "presenter21",
+    "firstName": "Sydney",
+    "lastName": "Briner",
+    "email": "briner@wustl.edu",
+    "affiliation": ["Washington University in St. Louis"]
+  },
+  "presenter22": {
+    "id": "presenter22",
+    "firstName": "Raphael",
+    "lastName": "Brosula",
+    "email": "brosula@broadinstitute.org",
+    "affiliation": ["Infectious Disease and Microbiome Program, The Broad Institute of MIT and Harvard"]
+  },
+  "presenter23": {
+    "id": "presenter23",
+    "firstName": "Hannah",
+    "lastName": "Brown Harding",
+    "email": "hbrown15@mgh.harvard.edu",
+    "affiliation": ["Division of Infectious Diseases, Department of Medicine, Massachusetts General Hospital", "Department of Medicine, Harvard Medical School", "Broad Institute of MIT and Harvard"]
+  },
+  "presenter24": {
+    "id": "presenter24",
+    "firstName": "Marcia",
+    "lastName": "C. David-Palma",
+    "email": "marcia.david.palma@duke.edu",
+    "affiliation": ["Department of Molecular Genetics and Microbiology, Duke University Medical Center"]
+  },
+  "presenter25": {
+    "id": "presenter25",
+    "firstName": "Jessica",
+    "lastName": "C. Hargarten",
+    "email": "jh2418@njms.rutgers.edu",
+    "affiliation": ["Rutgers New Jersey Medical School"]
+  },
+  "presenter26": {
+    "id": "presenter26",
+    "firstName": "Olivie",
+    "lastName": "Carolyne Namuju",
+    "email": "cnamuju@idi.co.ug",
+    "affiliation": ["Infectious Diseases Institute - College of Health Sciences - Makerere University"]
+  },
+  "presenter27": {
+    "id": "presenter27",
+    "firstName": "Rhona",
+    "lastName": "CB Muyise",
+    "email": "muyiserc@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University."]
+  },
+  "presenter28": {
+    "id": "presenter28",
+    "firstName": "Tymoteusz",
+    "lastName": "Cezary Pacamaj",
+    "email": "tymoteuszpacamaj@gmail.com",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter29": {
+    "id": "presenter29",
+    "firstName": "Tiffany",
+    "lastName": "Chang",
+    "email": "chan2372@umn.edu",
+    "affiliation": ["University of Minnesota, College of Pharmacy, Experimental and Clinical Pharmacology Dept."]
+  },
+  "presenter30": {
+    "id": "presenter30",
+    "firstName": "Zanetta",
+    "lastName": "Chang",
+    "email": "c.zanetta@wustl.edu",
+    "affiliation": ["Division of Infectious Diseases, Washington University in St. Louis"]
+  },
+  "presenter31": {
+    "id": "presenter31",
+    "firstName": "Louise",
+    "lastName": "Chapman",
+    "email": "s2074873@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter32": {
+    "id": "presenter32",
+    "firstName": "Daniel",
+    "lastName": "Chastain",
+    "email": "daniel.chastain@uga.edu",
+    "affiliation": ["Clinical Associate Professor, University of Georgia College of Pharmacy"]
+  },
+  "presenter33": {
+    "id": "presenter33",
+    "firstName": "Xuefei",
+    "lastName": "Chen",
+    "email": "pinkxf731@gmail.com",
+    "affiliation": ["The Ineos Oxford Institute for Antimicrobial Research and Department of Biology, Oxford University"]
+  },
+  "presenter34": {
+    "id": "presenter34",
+    "firstName": "Eric",
+    "lastName": "Cheung",
+    "email": "eric.c.k.cheung@utah.edu",
+    "affiliation": ["The University of Utah"]
+  },
+  "presenter35": {
+    "id": "presenter35",
+    "firstName": "Master",
+    "lastName": "Chisale",
+    "email": "2648506@dundee.ac.uk",
+    "affiliation": ["University of Dundee, School of Life Sciences, Drug Discovery Unit, Biological Chemistry and Drug Discovery", "Mzuzu University, Faculty of Science, Technology and Innovations, Biological Science Department"]
+  },
+  "presenter36": {
+    "id": "presenter36",
+    "firstName": "Seth",
+    "lastName": "D.  Greengo",
+    "email": "sgreengo@wisc.edu",
+    "affiliation": ["Department of Biomolecular Chemistry, University of Wisconsin"]
+  },
+  "presenter37": {
+    "id": "presenter37",
+    "firstName": "Tonia",
+    "lastName": "DARGHAM",
+    "email": "tonia.dargham@pasteur.fr",
+    "affiliation": ["Pasteur Institute Paris"]
+  },
+  "presenter38": {
+    "id": "presenter38",
+    "firstName": "Vimal",
+    "lastName": "Das Edakkattu Kundil Sivadasan",
+    "email": "vimal.das@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter39": {
+    "id": "presenter39",
+    "firstName": "Thomas",
+    "lastName": "Davies",
+    "email": "tdavies2@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter40": {
+    "id": "presenter40",
+    "firstName": "Lander",
+    "lastName": "De Herdt",
+    "email": "lander.deherdt@kuleuven.be",
+    "affiliation": ["Biomedical MRI, Department of Imaging and Pathology, KU Leuven"]
+  },
+  "presenter41": {
+    "id": "presenter41",
+    "firstName": "Manu",
+    "lastName": "De Rycker",
+    "email": "m.derycker@dundee.ac.uk",
+    "affiliation": ["Drug Discovery Unit, University of Dundee"]
+  },
+  "presenter42": {
+    "id": "presenter42",
+    "firstName": "Cassandre",
+    "lastName": "Deculty",
+    "email": "cassandre.deculty@pasteur.fr",
+    "affiliation": ["RNA and Extracellular Vesicles, Institut Pasteur, Université Paris Cité, Mycologie Moléculaire et Médicale"]
+  },
+  "presenter43": {
+    "id": "presenter43",
+    "firstName": "Marie",
+    "lastName": "Desnos-Ollivier",
+    "email": "mdesnos@pasteur.fr",
+    "affiliation": ["Institut Pasteur, National Reference Center for invasive Mycoses and Antifungals"]
+  },
+  "presenter44": {
+    "id": "presenter44",
+    "firstName": "Kisakye",
+    "lastName": "Diana Kabbale",
+    "email": "dkisakye@idi.co.ug",
+    "affiliation": ["Infectious Disease Institute, Uganda"]
+  },
+  "presenter45": {
+    "id": "presenter45",
+    "firstName": "Rebecca",
+    "lastName": "Drummond",
+    "email": "r.drummond@bham.ac.uk",
+    "affiliation": ["University of Birmingham"]
+  },
+  "presenter46": {
+    "id": "presenter46",
+    "firstName": "Dora",
+    "lastName": "Edith Corzo-Leon",
+    "email": "d.e.corzo-leon@exeter.ac.uk",
+    "affiliation": ["MRC Centre for Medical Mycology"]
+  },
+  "presenter47": {
+    "id": "presenter47",
+    "firstName": "Shannon",
+    "lastName": "Evans",
+    "email": "shannon.evans@sheffield.ac.uk",
+    "affiliation": ["School of Medicine and Population Health, Florey Institute, Bateson Centre, University of Sheffield"]
+  },
+  "presenter48": {
+    "id": "presenter48",
+    "firstName": "Larissa",
+    "lastName": "Fernandes",
+    "email": "larissaf@unb.br",
+    "affiliation": ["Bi-Institutional Translational Medicine, Oswaldo Cruz Foundation, São Paulo, Brazil and Center of Biotechnology, University of Brasília"]
+  },
+  "presenter49": {
+    "id": "presenter49",
+    "firstName": "Carolina",
+    "lastName": "Firacative",
+    "email": "cfiracative@gmail.com",
+    "affiliation": ["School of Medicine and Health Sciences, Universidad del Rosario"] 
+  },
+  "presenter50": {
+    "id": "presenter50",
+    "firstName": "Jane",
+    "lastName": "Frances Ndyetukira",
+    "email": "janeorge2@yahoo.com",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University"] 
+  },
+  "presenter51": {
+    "id": "presenter51",
+    "firstName": "Jane",
+    "lastName": "Gakuru",
+    "email": "janegakuru18@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, Makerere University"]
+  },
+  "presenter52": {
+    "id": "presenter52",
+    "firstName": "Jennifer",
+    "lastName": "Geddes-McAlister",
+    "email": "jgeddesm@uoguelph.ca",
+    "affiliation": ["University of Guelph"]
+  },
+  "presenter53": {
+    "id": "presenter53",
+    "firstName": "Alison",
+    "lastName": "Gifford",
+    "email": "ag839@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+  "presenter54": {
+    "id": "presenter54",
+    "firstName": "Wulfrun",
+    "lastName": "Godson",
+    "email": "wgodson@ed.ac.uk",
+    "affiliation": ["Hardwick Lab - University of Edinburgh"]
+  },
+  "presenter55": {
+    "id": "presenter55",
+    "firstName": "Kristie",
+    "lastName": "Goughenour",
+    "email": "gkristie@med.umich.edu",
+    "affiliation": ["University of Michigan and Lieutenant Colonel Charles S. Kettles VA"]
+  },
+  "presenter56": {
+    "id": "presenter56",
+    "firstName": "Ludmila",
+    "lastName": "Gouveia-Eufrasio",
+    "email": "milagouveia@yahoo.com.br",
+    "affiliation": ["Departament of Microbiology, Universidade Federal de Minas Gerais"]
+  },
+  "presenter57": {
+    "id": "presenter57",
+    "firstName": "Ashley",
+    "lastName": "H. Lim",
+    "email": "ashley.lim@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+  "presenter58": {
+    "id": "presenter58",
+    "firstName": "Felipe",
+    "lastName": "H. Santiago-Tirado",
+    "email": "fsantiago@nd.edu",
+    "affiliation": ["University of Notre Dame"]
+  },
+  "presenter59": {
+    "id": "presenter59",
+    "firstName": "Miss",
+    "lastName": "Hannah Newton",
+    "email": "hannah.newton@sydney.edu.au",
+    "affiliation": ["Sydney School of Veterinary Science, The University of Sydney"]
+  },
+  "presenter60": {
+    "id": "presenter60",
+    "firstName": "Dionn",
+    "lastName": "Hargreaves",
+    "email": "d.hargreaves@sheffield.ac.uk",
+    "affiliation": ["University of Sheffield"]
+  },
+  "presenter61": {
+    "id": "presenter61",
+    "firstName": "Lexia",
+    "lastName": "Henning",
+    "email": "2445812@students.wits.ac.za",
+    "affiliation": ["School of Molecular and Cell Biology, University of the Witwatersrand, South Africa"]
+  },
+  "presenter62": {
+    "id": "presenter62",
+    "firstName": "Francisco",
+    "lastName": "Hernandez",
+    "email": "fhernan8@jhu.edu",
+    "affiliation": ["Johns Hopkins School of Public Health"]
+  },
+  "presenter63": {
+    "id": "presenter63",
+    "firstName": "Irere",
+    "lastName": "Hilaire",
+    "email": "IH372@EXETER.AC.UK",
+    "affiliation": ["MRC CMM/ Exeter University"]
+  },
+  "presenter64": {
+    "id": "presenter64",
+    "firstName": "Uwe",
+    "lastName": "Himmelreich",
+    "email": "uwe.himmelreich@kuleuven.be",
+    "affiliation": ["KU Leuven, Department of Imaging and Pathology, Faculty of Medicine"]
+  },
+  "presenter65": {
+    "id": "presenter65",
+    "firstName": "Rebecca",
+    "lastName": "Hodges",
+    "email": "rebecca.hodges@sheffield.ac.uk",
+    "affiliation": ["School of Medicine and Population Health, Florey institute, Bateson Centre - The University of Sheffield"]
+  },
+  "presenter66": {
+    "id": "presenter66",
+    "firstName": "Guanggan",
+    "lastName": "Hu",
+    "email": "hug@msl.ubc.ca",
+    "affiliation": ["Michael Smith Laboratories, The University of British Columbia"]
+  },
+  "presenter67": {
+    "id": "presenter67",
+    "firstName": "Matheus",
+    "lastName": "Janeck Araujo",
+    "email": "mja227@exeter.ac.uk",
+    "affiliation": ["MRC Centre for Medical Mycology, University of Exeter, Exeter, UK"]
+  },
+  "presenter68": {
+    "id": "presenter68",
+    "firstName": "Makheni",
+    "lastName": "Jean Pierre",
+    "email": "khekhe001.mjp@gmail.com",
+    "affiliation": ["Molecular Mycology and Immunity Section, Laboratory of Host Immunity and Microbiome, Division of Intramural Research, National Institute of Allergy and Infectious Diseases, National Institutes of Health", "Department of Microbiology and Immunology, Georgetown University"]
+  },
+  "presenter69": {
+    "id": "presenter69",
+    "firstName": "Eun",
+    "lastName": "Jeong Won",
+    "email": "eunjeong.won@duke.edu",
+    "affiliation": ["Department of Molecular Genetics and Microbiology, Duke University Medical Center", "Department of Laboratory Medicine, Asan Medical Center, University of Ulsan College of Medicine"]
+  },
+  "presenter70": {
+    "id": "presenter70",
+    "firstName": "Ying-Kui",
+    "lastName": "Jiang",
+    "email": "ykjiang14@fudan.edu.cn",
+    "affiliation": ["Department of Infectious Diseases, Shanghai Key Laboratory of Infectious Diseases and Biosafety Emergency Response, National Medical Centre for Infectious Diseases, Huashan Hospital, Fudan University"]
+  },
+  "presenter71": {
+    "id": "presenter71",
+    "firstName": "Mulungi",
+    "lastName": "Jonathan",
+    "email": "mulungijonathan400@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, Makerere University"]
+  },
+  "presenter72": {
+    "id": "presenter72",
+    "firstName": "Mable",
+    "lastName": "Kabahubya",
+    "email": "mkabahubya@gmail.com",
+    "affiliation": ["Department of Research, Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter73": {
+    "id": "presenter73",
+    "firstName": "Enock",
+    "lastName": "Kagimu",
+    "email": "kanockenock@gmail.com",
+    "affiliation": ["Infectious diseases Institute, Makerere University, College of Health Sciences"]
+  },
+  "presenter74": {
+    "id": "presenter74",
+    "firstName": "Maahir",
+    "lastName": "Kauchali",
+    "email": "KCHMAA001@myuct.ac.za",
+    "affiliation": ["Division of Physiological Sciences, Department of Human Biology, Faculty of Health Sciences, University of Cape Town", "Neuroscience Institute, Faculty of Health Sciences, University of Cape Town, Groote Schuur Hospital", "CMM AFRICA Medical Mycology Research Unit, Institute of Infectious Disease and Molecular Medicine, Faculty of Health Sciences, University of Cape Town"]
+  },
+  "presenter75": {
+    "id": "presenter75",
+    "firstName": "Jessica",
+    "lastName": "Keeran",
+    "email": "jkeeran@clemson.edu",
+    "affiliation": ["Eukaryotic Pathogens Innovation Center, Clemson University"]
+  },
+  "presenter76": {
+    "id": "presenter76",
+    "firstName": "Dong-gyu",
+    "lastName": "Kim",
+    "email": "dong-gyu@wustl.edu",
+    "affiliation": ["Washington University in St. Louis"]
+  },
+  "presenter77": {
+    "id": "presenter77",
+    "firstName": "Sarah",
+    "lastName": "Kimuda",
+    "email": "skimuda@idi.co.ug",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter78": {
+    "id": "presenter78",
+    "firstName": "Lukasz",
+    "lastName": "Kozubowski",
+    "email": "lkozubo@clemson.edu",
+    "affiliation": ["Clemson University"]
+  },
+  "presenter79": {
+    "id": "presenter79",
+    "firstName": "Richard",
+    "lastName": "Kwizera",
+    "email": "kwizerarichard@ymail.com",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter80": {
+    "id": "presenter80",
+    "firstName": "Morris",
+    "lastName": "Kyozo Rutakingirwa",
+    "email": "kyozomorris@gmail.com",
+    "affiliation": ["Infectious diseases institute, College of health sciences, Makerere University"]
+  },
+  "presenter81": {
+    "id": "presenter81",
+    "firstName": "Elizabeth",
+    "lastName": "L. Schwartz",
+    "email": "schw2629@umn.edu",
+    "affiliation": ["Division of Infectious Diseases and International Medicine, Department of Medicine, University of Minnesota"]
+  },
+  "presenter82": {
+    "id": "presenter82",
+    "firstName": "Nsangi",
+    "lastName": "Laura Joan",
+    "email": "jlaura88800@gmail.com",
+    "affiliation": ["Infectious Disease Institute, Makerere University"]
+  },
+  "presenter83": {
+    "id": "presenter83",
+    "firstName": "Christopher",
+    "lastName": "Lee",
+    "email": "christopherwjlee@msl.ubc.ca",
+    "affiliation": ["Michael Smith Laboratories"]
+  },
+  "presenter84": {
+    "id": "presenter84",
+    "firstName": "Abigail",
+    "lastName": "Link",
+    "email": "abigail_link@urmc.rochester.edu",
+    "affiliation": ["University of Rochester"]
+  },
+  "presenter85": {
+    "id": "presenter85",
+    "firstName": "Alejandra",
+    "lastName": "Lora Plaza",
+    "email": "alejandra.lora@isciii.es",
+    "affiliation": ["Mycology Reference Laboratory, National Centre for Microbiology, Instituto de Salud Carlos III"]
+  },
+  "presenter86": {
+    "id": "presenter86",
+    "firstName": "Anamelia",
+    "lastName": "Lorenzetti Bocca",
+    "email": "anamelia.bocca@fiocruz.br",
+    "affiliation": ["Bi-Institutional Translational Medicine, Oswaldo Cruz Foundation, São Paulo, Brazil and Center of Biotechnology, University of Brasília"]
+  },
+  "presenter87": {
+    "id": "presenter87",
+    "firstName": "Qinxi",
+    "lastName": "Ma",
+    "email": "q.ma@exeter.ac.uk",
+    "affiliation": ["MRC Centre for Medical Mycology, University of Exeter"]
+  },
+  "presenter88": {
+    "id": "presenter88",
+    "firstName": "Dries",
+    "lastName": "Maes",
+    "email": "dries.maes@kuleuven.be",
+    "affiliation": ["KU Leuven"]
+  },
+  "presenter89": {
+    "id": "presenter89",
+    "firstName": "Kimberly",
+    "lastName": "Martinez",
+    "email": "mkimberly95@vt.edu",
+    "affiliation": ["Virginia Tech"]
+  },
+  "presenter90": {
+    "id": "presenter90",
+    "firstName": "Erin",
+    "lastName": "McClelland",
+    "email": "emcclelland@marian.edu",
+    "affiliation": ["Marian University Wood College of Osteopathic Medicine"]
+  },
+  "presenter91": {
+    "id": "presenter91",
+    "firstName": "Tshiama",
+    "lastName": "Miriam Mwamba",
+    "email": "miriamm@nicd.ac.za",
+    "affiliation": ["Wits Mycology Division, Faculty of Health Sciences, University of the Witwatersrand"]
+  },
+  "presenter92": {
+    "id": "presenter92",
+    "firstName": "Sile",
+    "lastName": "Molloy",
+    "email": "smolloy@sgul.ac.uk",
+    "affiliation": ["City St George's, University of London"]
+  },
+  "presenter93": {
+    "id": "presenter93",
+    "firstName": "Isabelle",
+    "lastName": "MOUYNA",
+    "email": "imouyna@pasteur.fr",
+    "affiliation": ["RNA and Extracellular Vesicles, Institut Pasteur, Université Paris Cité, Mycologie Moléculaire et Médicale"]
+  },
+  "presenter94": {
+    "id": "presenter94",
+    "firstName": "Timothy",
+    "lastName": "Mugabi",
+    "email": "tmugabi@idi.co.ug",
+    "affiliation": ["Infectious Diseases Institute, Makerere University"]
+  },
+  "presenter95": {
+    "id": "presenter95",
+    "firstName": "Kennedy",
+    "lastName": "Mupeli",
+    "email": "kennedymupeli@yahoo.com",
+    "affiliation": ["Botswana Harvard Health Partnership"]
+  },
+  "presenter96": {
+    "id": "presenter96",
+    "firstName": "Kyla",
+    "lastName": "Murphy",
+    "email": "kyla.murphy@uct.ac.za",
+    "affiliation": ["Department of Medicine, University of Cape Town, Cape Town"]
+  },
+  "presenter97": {
+    "id": "presenter97",
+    "firstName": "Sofia",
+    "lastName": "Mutalova",
+    "email": "sofia.mutalova@pasteur.fr",
+    "affiliation": ["RNA and Extracellular Vesicles, Institut Pasteur, Université Paris Cité, Mycologie Moléculaire et Médicale"]
+  },
+  "presenter98": {
+    "id": "presenter98",
+    "firstName": "Ayesha",
+    "lastName": "Nair",
+    "email": "ayesha.nair@okstate.edu",
+    "affiliation": ["Oklahoma State University"]
+  },
+  "presenter99": {
+    "id": "presenter99",
+    "firstName": "Elizabeth",
+    "lastName": "Nalintya",
+    "email": "nalintyaelizabeth@gmail.com",
+    "affiliation": ["Infectious Disease Institute, Makerere University college of health Sciences"]
+  },
+  "presenter100": {
+    "id": "presenter100",
+    "firstName": "Sylvia",
+    "lastName": "Namanda",
+    "email": "snamanda@idi.co.ug",
+    "affiliation": ["Department of Research, Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter101": {
+    "id": "presenter101",
+    "firstName": "Patricia",
+    "lastName": "Nerima",
+    "email": "pnerima@idi.co.ug",
+    "affiliation": ["Research department, Infectious Diseases Institute, Makerere University"]
+  },
+  "presenter102": {
+    "id": "presenter102",
+    "firstName": "William",
+    "lastName": "Newton",
+    "email": "wn257@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+  "presenter103": {
+    "id": "presenter103",
+    "firstName": "Zar",
+    "lastName": "Ni San",
+    "email": "orchidsan2222@gmail.com",
+    "affiliation": ["Medical Research Council Centre for Medical Mycology at the University of Exeter, University of Exeter", "School of Medicine, Dentistry and Biomedical Sciences, Queen's University Belfast"]
+  },
+  "presenter104": {
+    "id": "presenter104",
+    "firstName": "Adepemi",
+    "lastName": "O. Ogundeji",
+    "email": "ogundejiao@ufs.ac.za",
+    "affiliation": ["University of the Free State"]
+  },
+  "presenter105": {
+    "id": "presenter105",
+    "firstName": "Mark",
+    "lastName": "Oilor",
+    "email": "oilormark@gmail.com",
+    "affiliation": ["Makerere University"]
+  },
+  "presenter106": {
+    "id": "presenter106",
+    "firstName": "Samuel",
+    "lastName": "Okurut",
+    "email": "okuruts@gmail.com",
+    "affiliation": ["Research Department, Infectious Diseases Institute, Makerere University"]
+  },
+  "presenter107": {
+    "id": "presenter107",
+    "firstName": "Sueden",
+    "lastName": "Oliveira de Souza",
+    "email": "S.Oliveira-De-Souza@sms.ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter108": {
+    "id": "presenter108",
+    "firstName": "Michal",
+    "lastName": "Olszewski",
+    "email": "olszewsm@med.umich.edu",
+    "affiliation": ["University of Michigan Medical School and Ann Arbor VA Health System, Department of Veterans Affairs Health System"]
+  },
+  "presenter109": {
+    "id": "presenter109",
+    "firstName": "Adriana",
+    "lastName": "Orrego",
+    "email": "a.orrego@ed.ac.uk",
+    "affiliation": ["Institute of Cell Biology, School of Biological Sciences, The University of Edinburgh"]
+  },
+  "presenter110": {
+    "id": "presenter110",
+    "firstName": "Julia",
+    "lastName": "Palmucci",
+    "email": "palmu002@umn.edu",
+    "affiliation":  ["Center for Global Health and Social Responsibility, University of Minnesota"]
+  },
+  "presenter111": {
+    "id": "presenter111",
+    "firstName": "Yanga",
+    "lastName": "Pato",
+    "email": "ptxyan003@myuct.ac.za",
+    "affiliation": ["Division of Physiological Sciences, Department of Human Biology, Faculty of Health Sciences, University of Cape Town", "Neuroscience Institute, Faculty of Health Sciences, University of Cape Town, Groote Schuur Hospital", "CMM AFRICA Medical Mycology Research Unit, Institute of Infectious Disease and Molecular Medicine, Faculty of Health Sciences, University of Cape Town"]
+  },
+  "presenter112": {
+    "id": "presenter112",
+    "firstName": "Nicolas",
+    "lastName": "Pereira",
+    "email": "nlpereira@wisc.edu",
+    "affiliation": ["University of Wisconsin-Madison, Department of Biomolecular Chemistry"]
+  },
+  "presenter113": {
+    "id": "presenter113",
+    "firstName": "Sujiraphong",
+    "lastName": "Pharkjaksu",
+    "email": "pharkjaksus3@nih.gov",
+    "affiliation": ["Molecular Microbiology Section, Laboratory of Clinical Immunology and Microbiology, National Institute of Allergy and Infectious Diseases, National Institute of Health"]
+  },
+  "presenter114": {
+    "id": "presenter114",
+    "firstName": "Abigail",
+    "lastName": "Potton",
+    "email": "ap846@exeter.ac.uk",
+    "affiliation": ["MRC Centre for Medical Mycology, University of Exeter"]
+  },
+  "presenter115": {
+    "id": "presenter115",
+    "firstName": "Dmytro",
+    "lastName": "Prasolov",
+    "email": "dimaprasolov@gmail.com",
+    "affiliation": ["University of Kent"]
+  },
+  "presenter116": {
+    "id": "presenter116",
+    "firstName": "Emily",
+    "lastName": "Prendergast",
+    "email": "EPrendergast@witshealth.co.za",
+    "affiliation": ["Wits Mycology Division, University of the Witwatersrand"]
+  },
+  "presenter117": {
+    "id": "presenter117",
+    "firstName": "Corinna",
+    "lastName": "Probst",
+    "email": "corinna.probst@duke.edu",
+    "affiliation": ["Duke University, School of Medicine Department of Medicine"]
+  },
+  "presenter118": {
+    "id": "presenter118",
+    "firstName": "Eduardo",
+    "lastName": "Rafael Galue Mozo",
+    "email": "e.galue-mozo@exeter.ac.uk",
+    "affiliation": ["Medical Research Council Centre for Medical Mycology at The University of Exeter, University of Exeter"]
+  },
+  "presenter119": {
+    "id": "presenter119",
+    "firstName": "Sebastian",
+    "lastName": "Reusch",
+    "email": "reuschs@rki.de",
+    "affiliation": ["Robert Koch-Institute, Department of Infectious Diseases, Unit 16 Mycotic and Parasitic Agents and Mycobacteria"]
+  },
+  "presenter120": {
+    "id": "presenter120",
+    "firstName": "Alison",
+    "lastName": "Ricafrente",
+    "email": "alison.ricafrente@cshs.org",
+    "affiliation": ["Department of Medicine, Women's Guild Lung Institute, Cedars-Sinai Medical Center"]
+  },
+  "presenter121": {
+    "id": "presenter121",
+    "firstName": "Volker",
+    "lastName": "Rickerts",
+    "email": "RickertsV@RKI.de",
+    "affiliation": ["Robert Koch-Institute"]
+  },
+  "presenter122": {
+    "id": "presenter122",
+    "firstName": "Finn",
+    "lastName": "Ritchie",
+    "email": "s1963610@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter123": {
+    "id": "presenter123",
+    "firstName": "Steffin",
+    "lastName": "Rodrigues",
+    "email": "srodrig2@ed.ac.uk",
+    "affiliation": ["Institute of Cell Biology, School of Biological Sciences, University of Edinburgh"]
+  },
+  "presenter124": {
+    "id": "presenter124",
+    "firstName": "Samuel",
+    "lastName": "Rodrigues dos Santos Jr",
+    "email": "sroadri1@jh.edu",
+    "affiliation": ["W. Harry Feinstone Department of Molecular Microbiology and Immunology, The Johns Hopkins Bloomberg School of Public Health"]
+  },
+  "presenter125": {
+    "id": "presenter125",
+    "firstName": "Oscar",
+    "lastName": "Romero",
+    "email": "romerogo@uoguelph.ca",
+    "affiliation": ["Department of Molecular and Cellular Biology, University of Guelph"]
+  },
+  "presenter126": {
+    "id": "presenter126",
+    "firstName": "Lara",
+    "lastName": "Roosen",
+    "email": "Lara.roosen@kuleuven.be",
+    "affiliation": ["Biomedical MRI unit, Department Imaging and Pathology, KU Leuven"]
+  },
+  "presenter127": {
+    "id": "presenter127",
+    "firstName": "Robbi",
+    "lastName": "Ross",
+    "email": "rross4@nd.edu",
+    "affiliation": ["University of Notre Dame"]
+  },
+  "presenter128": {
+    "id": "presenter128",
+    "firstName": "Marina",
+    "lastName": "Ruzic",
+    "email": "ruzic@bc.edu",
+    "affiliation": ["Department of Biology, Boston College"]
+  },
+  "presenter129": {
+    "id": "presenter129",
+    "firstName": "Saba",
+    "lastName": "Sana",
+    "email": "saba.sana@gcu.edu.pk",
+    "affiliation": ["Department of Microbiology, Dr. Ikram Ul Haq Institute of Industrial Biotechnology, Government College Uniersity Lahore"]
+  },
+  "presenter130": {
+    "id": "presenter130",
+    "firstName": "Maria",
+    "lastName": "Sarah Najjuka",
+    "email": "najjukasarah@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, College of health Sciences, Makerere University"]
+  },
+  "presenter131": {
+    "id": "presenter131",
+    "firstName": "Leticia",
+    "lastName": "Serafim da Costa",
+    "email": "leticiaserafim@usp.br",
+    "affiliation": ["Department of Microbiology, Institute of Biomedical Sciences, University of São Paulo"]
+  },
+  "presenter132": {
+    "id": "presenter132",
+    "firstName": "Mari",
+    "lastName": "Shinohara",
+    "email": "ms294@duke.edu",
+    "affiliation": ["Duke University School of Medicine"]
+  },
+  "presenter133": {
+    "id": "presenter133",
+    "firstName": "Analis",
+    "lastName": "Smith",
+    "email": "analissmith12@vt.edu",
+    "affiliation": ["Virginia Polytechnic Institute and State University"]
+  },
+  "presenter134": {
+    "id": "presenter134",
+    "firstName": "Jackie",
+    "lastName": "Spieles",
+    "email": "spieles@wisc.edu",
+    "affiliation": ["University of Wisconsin-Madison"]
+  },
+  "presenter135": {
+    "id": "presenter135",
+    "firstName": "Piotr",
+    "lastName": "Stempinski",
+    "email": "pstempi1@jhu.edu",
+    "affiliation": ["Johns Hopkins University"]
+  },
+  "presenter136": {
+    "id": "presenter136",
+    "firstName": "Jake",
+    "lastName": "Leinas",
+    "email": "leinasj@bc.edu",
+    "affiliation": ["Department of Biology, Boston College"]
+  },
+  "presenter137": {
+    "id": "presenter137",
+    "firstName": "Nalu",
+    "lastName": "Teixeira de Aguilar Peres",
+    "email": "naluperes@gmail.com",
+    "affiliation": ["Federal University of Minas Gerais"]
+  },
+  "presenter138": {
+    "id": "presenter138",
+    "firstName": "Jennifer",
+    "lastName": "Tenor",
+    "email": "jennifer.tenor@duke.edu",
+    "affiliation": ["Duke University School of Medicine, Dept. of Medicine, Division of Infectious Diseases"]
+  },
+  "presenter139": {
+    "id": "presenter139",
+    "firstName": "Dena",
+    "lastName": "Toffaletti",
+    "email": "dena.toffaletti@duke.edu",
+    "affiliation": ["Duke University School of Medicine, Dept. of Medicine, Division of Infectious Diseases"]
+  },
+  "presenter140": {
+    "id": "presenter140",
+    "firstName": "Alba",
+    "lastName": "Torres Cano",
+    "email": "atorres@isciii.es",
+    "affiliation": ["Instituto de Salud Carlos III"]
+  },
+  "presenter141": {
+    "id": "presenter141",
+    "firstName": "Asmus",
+    "lastName": "Tukundane",
+    "email": "asmus.tukundane@gmail.com",
+    "affiliation": ["Infectious Diseases Institute, College of Health Sciences, Makerere University"]
+  },
+  "presenter142": {
+    "id": "presenter142",
+    "firstName": "Chinaemerem",
+    "lastName": "Uju Onyishi",
+    "email": "ujubenita@gmail.com",
+    "affiliation": ["Ragon Institute of Mass General, MIT, and Harvard"]
+  },
+  "presenter143": {
+    "id": "presenter143",
+    "firstName": "Greetje",
+    "lastName": "Vande Velde",
+    "email": "greetje.vandevelde@kuleuven.be",
+    "affiliation": ["KU Leuven"]
+  },
+  "presenter144": {
+    "id": "presenter144",
+    "firstName": "Sriram",
+    "lastName": "Varahan",
+    "email": "sriram.ccmb@csir.res.in",
+    "affiliation": ["CSIR-Centre for Cellular and Molecular Biology"]
+  },
+  "presenter145": {
+    "id": "presenter145",
+    "firstName": "Karen",
+    "lastName": "Wozniak",
+    "email": "karen.wozniak@okstate.edu",
+    "affiliation": ["Oklahoma State University"]
+  },
+  "presenter146": {
+    "id": "presenter146",
+    "firstName": "Jintao",
+    "lastName": "Xu",
+    "email": "jintaoxu@umich.edu",
+    "affiliation": ["Division of Pulmonary and Critical Care Medicine, Department of Internal Medicine, University of Michigan Health System"]
+  },
+  "presenter147": {
+    "id": "presenter147",
+    "firstName": "Chaoyang",
+    "lastName": "Xue",
+    "email": "xuech@njms.rutgers.edu",
+    "affiliation": ["Rutgers University"]
+  },
+  "presenter148": {
+    "id": "presenter148",
+    "firstName": "Hyunah",
+    "lastName": "Yoon",
+    "email": "hyoon@montefiore.org",
+    "affiliation": ["Albert Einstein College of Medicine"]
+  },
+  "presenter149": {
+    "id": "presenter149",
+    "firstName": "Sosie",
+    "lastName": "Yorki",
+    "email": "sosie_yorki@brown.edu",
+    "affiliation": ["Brown University, Department of Computational Molecular Biology"]
+  },
+  "presenter150": {
+    "id": "presenter150",
+    "firstName": "Yu",
+    "lastName": "Zhang",
+    "email": "yz1139@gsbs.rutgers.edu",
+    "affiliation": ["Rutgers University"]
+  },
+  "presenter151": {
+    "id": "presenter151",
+    "firstName": "Linghong",
+    "lastName": "Zhou",
+    "email": "zhoulinghong2016@163.com",
+    "affiliation": ["Huashan Hospital, Fudan University"]
+  },
+  "presenter152": {
+    "id": "presenter152",
+    "firstName": "David",
+    "lastName": "Engelthaler",
+    "email": "dengelthaler@tgen.org",
+    "affiliation": ["Translational Genomics Research Institute"]
+  },
+  "presenter153": {
+    "id": "presenter153",
+    "firstName": "Radha",
+    "lastName": "Rajasingham",
+    "email": "radha@umn.edu",
+    "affiliation": ["University of Minnesota"]
+  },
+  "presenter154": {
+    "id": "presenter154",
+    "firstName": "Paul",
+    "lastName": "Magwene",
+    "email": "paul.magwene@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+  "presenter155": {
+    "id": "presenter155",
+    "firstName": "Kirsten",
+    "lastName": "Nielsen",
+    "email": "kirstennielsen@vt.edu",
+    "affiliation": ["Virginia Tech University"]
+  },
+  "presenter156": {
+    "id": "presenter156",
+    "firstName": "Li-Ping",
+    "lastName": "Zhu",
+    "email": "zhulp@fudan.edu.cn",
+    "affiliation": ["Huashan Hospital, Fudan University"]
+  },
+  "presenter157": {
+    "id": "presenter157",
+    "firstName": "Nelesh",
+    "lastName": "Govender",
+    "email": "nelesh.Govender@wits.ac.za",
+    "affiliation": ["National Institute for Communicable Diseases (South Africa)"]
+  },
+  "presenter158": {
+    "id": "presenter158",
+    "firstName": "John",
+    "lastName": "Perfect",
+    "email": "perfe001@mc.duke.edu",
+    "affiliation": ["Duke University"]
+  },
+  "presenter159": {
+    "id": "presenter159",
+    "firstName": "Joseph",
+    "lastName": "Jarvis",
+    "email": "joseph.jarvis@lshtm.ac.uk",
+    "affiliation": ["London School of Hygiene & Tropical Medicine"]
+  },
+  "presenter160": {
+    "id": "presenter160",
+    "firstName": "Tamara",
+    "lastName": "Doering",
+    "email": "doering@wustl.edu",
+    "affiliation": ["Washington University in St. Louis"]
+  },
+  "presenter161": {
+    "id": "presenter161",
+    "firstName": "Xiaorong",
+    "lastName": "Lin",
+    "email": "xiaorong.Lin@uga.edu",
+    "affiliation": ["University of Georgia"]
+  },
+  "presenter162": {
+    "id": "presenter162",
+    "firstName": "Christina",
+    "lastName": "Cuomo",
+    "email": "cuomo@broadinstitute.org",
+    "affiliation": ["Broad Institute"]
+  },
+  "presenter163": {
+    "id": "presenter163",
+    "firstName": "Makoto",
+    "lastName": "Inoue",
+    "email": "makotoi@illinois.edu",
+    "affiliation": ["The University of Illinois at Urbana-Champaign"]
+  },
+  "presenter164": {
+    "id": "presenter164",
+    "firstName": "Maurizio",
+    "lastName": "Del Poeta",
+    "email": "maurizio.delpoeta@stonybrook.edu",
+    "affiliation": ["Stony Brook University"]
+  },
+  "presenter165": {
+    "id": "presenter165",
+    "firstName": "Marco",
+    "lastName": "Coelho",
+    "email": "marco.dias.coelho@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+  "presenter166": {
+    "id": "presenter166",
+    "firstName": "Robin",
+    "lastName": "May",
+    "email": "r.c.may@bham.ac.uk",
+    "affiliation": ["Food Standards Agency"]
+  },
+  "presenter167": {
+    "id": "presenter167",
+    "firstName": "Sarah",
+    "lastName": "Gurr",
+    "email": "S.J.Gurr@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+  "presenter168": {
+    "id": "presenter168",
+    "firstName": "Baroness Natalie",
+    "lastName": "Bennett",
+    "email": "bennettn@parliament.uk",
+    "affiliation": ["Green Party"]
+  },
+  "presenter169": {
+    "id": "presenter169",
+    "firstName": "Eric",
+    "lastName": "Dang",
+    "email": "",
+    "affiliation": ["Ragon Institute of Mass General, MIT, and Harvard"]
+  },
+  "presenter170": {
+    "id": "presenter170",
+    "firstName": "Rachael",
+    "lastName": "Dangarembizi",
+    "email": "rachael.dangarembizi@uct.ac.za",
+    "affiliation": ["University of Cape Town"]
+  },
+  "presenter171": {
+    "id": "presenter171",
+    "firstName": "Lena",
+    "lastName": "Heung",
+    "email": "Lena.Heung@csmc.edu",
+    "affiliation": ["Cedars-Sinai Health Science University"]
+  },
+  "presenter172": {
+    "id": "presenter172",
+    "firstName": "Jessica",
+    "lastName": "Brown",
+    "email": "brown@biology.utah.edu",
+    "affiliation": ["University of Utah"]
+  },
+  "presenter173": {
+    "id": "presenter173",
+    "firstName": "Márcio",
+    "lastName": "Rodrigues",
+    "email": "marcio.rodrigues@fiocruz.br",
+    "affiliation": ["Federal University of Rio de Janeiro"]
+  },
+  "presenter174": {
+    "id": "presenter174",
+    "firstName": "Serisha",
+    "lastName": "Naicker",
+    "email": "serishan@nicd.ac.za",
+    "affiliation": ["National Institute for Communicable Diseases, University of the Witwatersrand"]
+  },
+  "presenter175": {
+    "id": "presenter175",
+    "firstName": "Asiya",
+    "lastName": "Gusa",
+    "email": "asiya.gusa@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+  "presenter176": {
+    "id": "presenter176",
+    "firstName": "Kaustuv",
+    "lastName": "Sanyal",
+    "email": "sanyal@jncasr.ac.in",
+    "affiliation": ["Jawaharlal Nehru Centre for Advanced Scientific Research"]
+  },
+  "presenter177": {
+    "id": "presenter177",
+    "firstName": "Guilhem",
+    "lastName": "Janbon",
+    "email": "janbon@pasteur.fr",
+    "affiliation": ["Pasteur Institute Paris"]
+  },
+  "presenter178": {
+    "id": "presenter178",
+    "firstName": "Hiten",
+    "lastName": "Madhani",
+    "email": "hitenmadhani@gmail.com",
+    "affiliation": ["UCSF"]
+  },
+  "presenter179": {
+    "id": "presenter179",
+    "firstName": "Evelina",
+    "lastName": "Basenko",
+    "email": "e.basenko@liverpool.ac.uk",
+    "affiliation": ["University of Liverpool"]
+  },
+  "presenter180": {
+    "id": "presenter180",
+    "firstName": "Edward",
+    "lastName": "Wallace",
+    "email": "edward.wallace@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+  "presenter181": {
+    "id": "presenter181",
+    "firstName": "Tom",
+    "lastName": "Harrison",
+    "email": "T.S.Harrison@exeter.ac.uk",
+    "affiliation": ["City St. George's, University of London"]
+  },
+  "presenter182": {
+    "id": "presenter182",
+    "firstName": "David",
+    "lastName": "Boulware",
+    "email": "boulw001@umn.edu",
+    "affiliation": ["University of Minnesota"]
+  },
+  "presenter183": {
+    "id": "presenter183",
+    "firstName": "David",
+    "lastName": "Meya",
+    "email": "David.meya@gmail.com",
+    "affiliation": ["Makerere University, Infectious Diseases institute"]
+  },
+  "presenter184": {
+    "id": "presenter184",
+    "firstName": "Linqi",
+    "lastName": "Wang",
+    "email": "wanglq@im.ac.cn",
+    "affiliation": ["State Key Laboratory of Mycology, Institute of Microbiology, Chinese Academy of Sciences"]
+  },
+  "presenter185": {
+    "id": "presenter185",
+    "firstName": "Stuart",
+    "lastName": "Levitz",
+    "email": "stuart.levitz@umassmed.edu",
+    "affiliation": ["University of Massacusetts Medical School"]
+  },
+  "presenter186": {
+    "id": "presenter186",
+    "firstName": "Joseph",
+    "lastName": "Heitman",
+    "email": "heitm001@duke.edu",
+    "affiliation": ["Duke University"]
+  }
+}

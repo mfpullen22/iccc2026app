@@ -1,0 +1,1879 @@
+{
+  "presenter1": {
+    "id": "presenter1",
+    "firstName": "Kennedy",
+    "lastName": "Mupeli",
+    "email": "kennedymupeli@yahoo.com",
+    "headshot": "",
+    "presentations": [
+      "pres1"
+    ]
+  },
+  "presenter2": {
+    "id": "presenter2",
+    "firstName": "Julia",
+    "lastName": "Palmucci",
+    "email": "palmu002@umn.edu",
+    "headshot": "",
+    "presentations": [
+      "pres2",
+      "pres3"
+    ]
+  },
+  "presenter3": {
+    "id": "presenter3",
+    "firstName": "Sile",
+    "lastName": "Molloy",
+    "email": "smolloy@sgul.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres4"
+    ]
+  },
+  "presenter4": {
+    "id": "presenter4",
+    "firstName": "Daniel",
+    "lastName": "Chastain",
+    "email": "daniel.chastain@uga.edu",
+    "headshot": "",
+    "presentations": [
+      "pres5",
+      "pres6"
+    ]
+  },
+  "presenter5": {
+    "id": "presenter5",
+    "firstName": "Kyla",
+    "lastName": "Murphy",
+    "email": "kyla.murphy@uct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres7"
+    ]
+  },
+  "presenter6": {
+    "id": "presenter6",
+    "firstName": "Eun",
+    "lastName": "Jeong Won",
+    "email": "eunjeong.won@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres8"
+    ]
+  },
+  "presenter7": {
+    "id": "presenter7",
+    "firstName": "Sylvia",
+    "lastName": "Namanda",
+    "email": "snamanda@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres9"
+    ]
+  },
+  "presenter8": {
+    "id": "presenter8",
+    "firstName": "Mable",
+    "lastName": "Kabahubya",
+    "email": "mkabahubya@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres10"
+    ]
+  },
+  "presenter9": {
+    "id": "presenter9",
+    "firstName": "Elizabeth",
+    "lastName": "L. Schwartz",
+    "email": "schw2629@umn.edu",
+    "headshot": "",
+    "presentations": [
+      "pres11"
+    ]
+  },
+  "presenter10": {
+    "id": "presenter10",
+    "firstName": "Nalu",
+    "lastName": "Teixeira de Aguiar Peres",
+    "email": "naluperes@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres12"
+    ]
+  },
+  "presenter11": {
+    "id": "presenter11",
+    "firstName": "Elizabeth",
+    "lastName": "Nalintya",
+    "email": "nalintyaelizabeth@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres13"
+    ]
+  },
+  "presenter12": {
+    "id": "presenter12",
+    "firstName": "Nsangi",
+    "lastName": "Laura Joan",
+    "email": "jlaura88800@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres14"
+    ]
+  },
+  "presenter13": {
+    "id": "presenter13",
+    "firstName": "Olivie",
+    "lastName": "Carolyne Namuju",
+    "email": "cnamuju@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres15"
+    ]
+  },
+  "presenter14": {
+    "id": "presenter14",
+    "firstName": "Mulungi",
+    "lastName": "Jonathan",
+    "email": "mulungijonathan400@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres16"
+    ]
+  },
+  "presenter15": {
+    "id": "presenter15",
+    "firstName": "Morris",
+    "lastName": "Kyozo Rutakingirwa",
+    "email": "kyozomorris@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres17"
+    ]
+  },
+  "presenter16": {
+    "id": "presenter16",
+    "firstName": "Asmus",
+    "lastName": "Tukundane",
+    "email": "asmus.tukundane@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres18",
+      "pres27"
+    ]
+  },
+  "presenter17": {
+    "id": "presenter17",
+    "firstName": "Jane",
+    "lastName": "Frances Ndyetukira",
+    "email": "janeorge2@yahoo.com",
+    "headshot": "",
+    "presentations": [
+      "pres19"
+    ]
+  },
+  "presenter18": {
+    "id": "presenter18",
+    "firstName": "Rhona",
+    "lastName": "CB Muyise",
+    "email": "muyiserc@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres20"
+    ]
+  },
+  "presenter19": {
+    "id": "presenter19",
+    "firstName": "Richard",
+    "lastName": "Kwizera",
+    "email": "kwizerarichard@ymail.com",
+    "headshot": "",
+    "presentations": [
+      "pres21"
+    ]
+  },
+  "presenter20": {
+    "id": "presenter20",
+    "firstName": "Maria",
+    "lastName": "Sarah Najjuka",
+    "email": "najjukasarah@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres22"
+    ]
+  },
+  "presenter21": {
+    "id": "presenter21",
+    "firstName": "Timothy",
+    "lastName": "Mugabi",
+    "email": "tmugabi@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres23"
+    ]
+  },
+  "presenter22": {
+    "id": "presenter22",
+    "firstName": "Jane",
+    "lastName": "Gakuru",
+    "email": "janegakuru18@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres24"
+    ]
+  },
+  "presenter23": {
+    "id": "presenter23",
+    "firstName": "Desnos-Ollivier",
+    "lastName": "",
+    "email": "mdesnos@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres25"
+    ]
+  },
+  "presenter24": {
+    "id": "presenter24",
+    "firstName": "Alba",
+    "lastName": "Torres Cano",
+    "email": "atorres@isciii.es",
+    "headshot": "",
+    "presentations": [
+      "pres26"
+    ]
+  },
+  "presenter25": {
+    "id": "presenter25",
+    "firstName": "Patricia",
+    "lastName": "Nerima",
+    "email": "pnerima@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres28"
+    ]
+  },
+  "presenter26": {
+    "id": "presenter26",
+    "firstName": "Volker",
+    "lastName": "Rickerts",
+    "email": "RickertsV@RKI.de",
+    "headshot": "",
+    "presentations": [
+      "pres29"
+    ]
+  },
+  "presenter27": {
+    "id": "presenter27",
+    "firstName": "Chaoyang",
+    "lastName": "Xue",
+    "email": "xuech@njms.rutgers.edu",
+    "headshot": "",
+    "presentations": [
+      "pres30"
+    ]
+  },
+  "presenter28": {
+    "id": "presenter28",
+    "firstName": "Nicolas",
+    "lastName": "Antunez de Mayolo",
+    "email": "nicolas.antunez.de.mayolo@upch.pe",
+    "headshot": "",
+    "presentations": [
+      "pres31"
+    ]
+  },
+  "presenter29": {
+    "id": "presenter29",
+    "firstName": "Michal",
+    "lastName": "Olszewski",
+    "email": "olszewsm@umich.edu",
+    "headshot": "",
+    "presentations": [
+      "pres32"
+    ]
+  },
+  "presenter30": {
+    "id": "presenter30",
+    "firstName": "Abigail",
+    "lastName": "Link",
+    "email": "abigail_link@urmc.rochester.edu",
+    "headshot": "",
+    "presentations": [
+      "pres33"
+    ]
+  },
+  "presenter31": {
+    "id": "presenter31",
+    "firstName": "Emily",
+    "lastName": "Prendergast",
+    "email": "EPrendergast@witshealth.co.za",
+    "headshot": "",
+    "presentations": [
+      "pres34"
+    ]
+  },
+  "presenter32": {
+    "id": "presenter32",
+    "firstName": "Sosie",
+    "lastName": "Yorki",
+    "email": "sosie_yorki@brown.edu",
+    "headshot": "",
+    "presentations": [
+      "pres35"
+    ]
+  },
+  "presenter33": {
+    "id": "presenter33",
+    "firstName": "Marcia",
+    "lastName": "C David-Palma",
+    "email": "marcia.david.palma@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres36"
+    ]
+  },
+  "presenter34": {
+    "id": "presenter34",
+    "firstName": "Raphael",
+    "lastName": "Brosula",
+    "email": "brosula@broadinstitute.org",
+    "headshot": "",
+    "presentations": [
+      "pres37"
+    ]
+  },
+  "presenter35": {
+    "id": "presenter35",
+    "firstName": "Kisakye",
+    "lastName": "Diana Kabbale",
+    "email": "dkisakye@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres38"
+    ]
+  },
+  "presenter36": {
+    "id": "presenter36",
+    "firstName": "Adriana",
+    "lastName": "Orrego",
+    "email": "a.orrego@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres39"
+    ]
+  },
+  "presenter37": {
+    "id": "presenter37",
+    "firstName": "Sujiraphong",
+    "lastName": "Pharkjaksu",
+    "email": "pharkjaksus3@nih.gov",
+    "headshot": "",
+    "presentations": [
+      "pres40"
+    ]
+  },
+  "presenter38": {
+    "id": "presenter38",
+    "firstName": "Alejandra",
+    "lastName": "Lora Plaza",
+    "email": "alejandra.lora@isciii.es",
+    "headshot": "",
+    "presentations": [
+      "pres41"
+    ]
+  },
+  "presenter39": {
+    "id": "presenter39",
+    "firstName": "Lexia",
+    "lastName": "Henning",
+    "email": "2445812@students.wits.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres42"
+    ]
+  },
+  "presenter40": {
+    "id": "presenter40",
+    "firstName": "Alison",
+    "lastName": "Gifford",
+    "email": "ag839@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres43"
+    ]
+  },
+  "presenter41": {
+    "id": "presenter41",
+    "firstName": "Rahul",
+    "lastName": "Anand",
+    "email": "r.anand@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres44"
+    ]
+  },
+  "presenter42": {
+    "id": "presenter42",
+    "firstName": "Blake",
+    "lastName": "Billmyre",
+    "email": "blake.billmyre@uga.edu",
+    "headshot": "",
+    "presentations": [
+      "pres45"
+    ]
+  },
+  "presenter43": {
+    "id": "presenter43",
+    "firstName": "Tshiama",
+    "lastName": "Miriam Mwamba",
+    "email": "miriamm@nicd.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres46"
+    ]
+  },
+  "presenter44": {
+    "id": "presenter44",
+    "firstName": "Claudia",
+    "lastName": "A. Petrucco",
+    "email": "cap93@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres47"
+    ]
+  },
+  "presenter45": {
+    "id": "presenter45",
+    "firstName": "Lukasz",
+    "lastName": "Kozubowski",
+    "email": "lkozubo@clemson.edu",
+    "headshot": "",
+    "presentations": [
+      "pres48"
+    ]
+  },
+  "presenter46": {
+    "id": "presenter46",
+    "firstName": "Sriram",
+    "lastName": "Varahan",
+    "email": "sriram.ccmb@csir.res.in",
+    "headshot": "",
+    "presentations": [
+      "pres49"
+    ]
+  },
+  "presenter47": {
+    "id": "presenter47",
+    "firstName": "Marina",
+    "lastName": "Ruzic",
+    "email": "ruzic@bc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres50"
+    ]
+  },
+  "presenter48": {
+    "id": "presenter48",
+    "firstName": "Seth",
+    "lastName": "D. Greengo",
+    "email": "sgreengo@wisc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres51"
+    ]
+  },
+  "presenter49": {
+    "id": "presenter49",
+    "firstName": "Ashley",
+    "lastName": "H. Lim",
+    "email": "ashley.lim@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres52"
+    ]
+  },
+  "presenter50": {
+    "id": "presenter50",
+    "firstName": "Alejandro",
+    "lastName": "Antonia",
+    "email": "alejandro.antonia@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres53"
+    ]
+  },
+  "presenter51": {
+    "id": "presenter51",
+    "firstName": "Dena",
+    "lastName": "Toffaletti",
+    "email": "dena.toffaletti@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres54"
+    ]
+  },
+  "presenter52": {
+    "id": "presenter52",
+    "firstName": "Wulfrun",
+    "lastName": "Godson",
+    "email": "wgodson@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres55"
+    ]
+  },
+  "presenter53": {
+    "id": "presenter53",
+    "firstName": "Ruchi",
+    "lastName": "Agrawal",
+    "email": "ruchi.agrawal@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres56"
+    ]
+  },
+  "presenter54": {
+    "id": "presenter54",
+    "firstName": "Steffin",
+    "lastName": "Rodrigues",
+    "email": "srodrig2@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres57"
+    ]
+  },
+  "presenter55": {
+    "id": "presenter55",
+    "firstName": "Francisco",
+    "lastName": "Hernandez",
+    "email": "fhernan8@jhu.edu",
+    "headshot": "",
+    "presentations": [
+      "pres58"
+    ]
+  },
+  "presenter56": {
+    "id": "presenter56",
+    "firstName": "Piotr",
+    "lastName": "Stempinski",
+    "email": "pstempi1@jhu.edu",
+    "headshot": "",
+    "presentations": [
+      "pres59"
+    ]
+  },
+  "presenter57": {
+    "id": "presenter57",
+    "firstName": "ZAR",
+    "lastName": "NI SAN",
+    "email": "orchidsan2222@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres60"
+    ]
+  },
+  "presenter58": {
+    "id": "presenter58",
+    "firstName": "Eduardo",
+    "lastName": "Rafael Galue Mozo",
+    "email": "e.galue-mozo@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres61"
+    ]
+  },
+  "presenter59": {
+    "id": "presenter59",
+    "firstName": "Abigail",
+    "lastName": "Potton",
+    "email": "ap846@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres62"
+    ]
+  },
+  "presenter60": {
+    "id": "presenter60",
+    "firstName": "Matheus",
+    "lastName": "Janeck Araujo",
+    "email": "mja227@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres63"
+    ]
+  },
+  "presenter61": {
+    "id": "presenter61",
+    "firstName": "Irere",
+    "lastName": "Hilaire",
+    "email": "IH372@EXETER.AC.UK",
+    "headshot": "",
+    "presentations": [
+      "pres64"
+    ]
+  },
+  "presenter62": {
+    "id": "presenter62",
+    "firstName": "Isabelle",
+    "lastName": "MOUYNA",
+    "email": "imouyna@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres65"
+    ]
+  },
+  "presenter63": {
+    "id": "presenter63",
+    "firstName": "Sofia",
+    "lastName": "Mutalova",
+    "email": "sofia.mutalova@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres66"
+    ]
+  },
+  "presenter64": {
+    "id": "presenter64",
+    "firstName": "Cassandre",
+    "lastName": "Deculty",
+    "email": "cassandre.deculty@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres67"
+    ]
+  },
+  "presenter65": {
+    "id": "presenter65",
+    "firstName": "Elizabeth",
+    "lastName": "Bayne",
+    "email": "elizabeth.bayne@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres68"
+    ]
+  },
+  "presenter66": {
+    "id": "presenter66",
+    "firstName": "Miss",
+    "lastName": "Hannah Newton",
+    "email": "hannah.newton@sydney.edu.au",
+    "headshot": "",
+    "presentations": [
+      "pres69"
+    ]
+  },
+  "presenter67": {
+    "id": "presenter67",
+    "firstName": "Xuefei",
+    "lastName": "Chen",
+    "email": "pinkxf731@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres70"
+    ]
+  },
+  "presenter68": {
+    "id": "presenter68",
+    "firstName": "Elise",
+    "lastName": "Bedford",
+    "email": "ebedfo02@student.ubc.ca",
+    "headshot": "",
+    "presentations": [
+      "pres71"
+    ]
+  },
+  "presenter69": {
+    "id": "presenter69",
+    "firstName": "Thomas",
+    "lastName": "Davies",
+    "email": "tdavies2@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres72"
+    ]
+  },
+  "presenter70": {
+    "id": "presenter70",
+    "firstName": "Finn",
+    "lastName": "Ritchie",
+    "email": "s1963610@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres73"
+    ]
+  },
+  "presenter71": {
+    "id": "presenter71",
+    "firstName": "Louise",
+    "lastName": "Chapman",
+    "email": "s2074873@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres74"
+    ]
+  },
+  "presenter72": {
+    "id": "presenter72",
+    "firstName": "Sueden",
+    "lastName": "Oliveira de Souza",
+    "email": "S.Oliveira-De-Souza@sms.ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres75"
+    ]
+  },
+  "presenter73": {
+    "id": "presenter73",
+    "firstName": "Tymoteusz",
+    "lastName": "Cezary Pacamaj",
+    "email": "tymoteuszpacamaj@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres76"
+    ]
+  },
+  "presenter74": {
+    "id": "presenter74",
+    "firstName": "Vimal",
+    "lastName": "Das Edakkattu Kundil Sivadasan",
+    "email": "vimal.das@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres77"
+    ]
+  },
+  "presenter75": {
+    "id": "presenter75",
+    "firstName": "Jackie",
+    "lastName": "Spieles",
+    "email": "spieles@wisc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres78"
+    ]
+  },
+  "presenter76": {
+    "id": "presenter76",
+    "firstName": "Kimberly",
+    "lastName": "Martinez",
+    "email": "mkimberly95@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres79"
+    ]
+  },
+  "presenter77": {
+    "id": "presenter77",
+    "firstName": "Sydney",
+    "lastName": "Briner",
+    "email": "briner@wustl.edu",
+    "headshot": "",
+    "presentations": [
+      "pres80"
+    ]
+  },
+  "presenter78": {
+    "id": "presenter78",
+    "firstName": "Dong-gyu",
+    "lastName": "Kim",
+    "email": "dong-gyu@wustl.edu",
+    "headshot": "",
+    "presentations": [
+      "pres81"
+    ]
+  },
+  "presenter79": {
+    "id": "presenter79",
+    "firstName": "Maahir",
+    "lastName": "Kauchali",
+    "email": "KCHMAA001@myuct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres82"
+    ]
+  },
+  "presenter80": {
+    "id": "presenter80",
+    "firstName": "Makheni",
+    "lastName": "Jean Pierre",
+    "email": "khekhe001.mjp@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres83"
+    ]
+  },
+  "presenter81": {
+    "id": "presenter81",
+    "firstName": "Lander",
+    "lastName": "De Herdt",
+    "email": "lander.deherdt@kuleuven.be",
+    "headshot": "",
+    "presentations": [
+      "pres84"
+    ]
+  },
+  "presenter82": {
+    "id": "presenter82",
+    "firstName": "Bruno",
+    "lastName": "Borges",
+    "email": "bmborges@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres85"
+    ]
+  },
+  "presenter83": {
+    "id": "presenter83",
+    "firstName": "Alison",
+    "lastName": "Ricafrente",
+    "email": "alison.ricafrente@cshs.org",
+    "headshot": "",
+    "presentations": [
+      "pres86"
+    ]
+  },
+  "presenter84": {
+    "id": "presenter84",
+    "firstName": "Hannah",
+    "lastName": "Brown Harding",
+    "email": "hbrown15@mgh.harvard.edu",
+    "headshot": "",
+    "presentations": [
+      "pres87"
+    ]
+  },
+  "presenter85": {
+    "id": "presenter85",
+    "firstName": "Jintao",
+    "lastName": "Xu",
+    "email": "jintaoxu@umich.edu",
+    "headshot": "",
+    "presentations": [
+      "pres88"
+    ]
+  },
+  "presenter86": {
+    "id": "presenter86",
+    "firstName": "Mari",
+    "lastName": "Shinohara",
+    "email": "ms294@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres89"
+    ]
+  },
+  "presenter87": {
+    "id": "presenter87",
+    "firstName": "Enock",
+    "lastName": "Kagimu",
+    "email": "kanockenock@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres90"
+    ]
+  },
+  "presenter88": {
+    "id": "presenter88",
+    "firstName": "Mark",
+    "lastName": "Oilor",
+    "email": "oilormark@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres91"
+    ]
+  },
+  "presenter89": {
+    "id": "presenter89",
+    "firstName": "Erin",
+    "lastName": "McClelland",
+    "email": "emcclelland@marian.edu",
+    "headshot": "",
+    "presentations": [
+      "pres92"
+    ]
+  },
+  "presenter90": {
+    "id": "presenter90",
+    "firstName": "Ayesha",
+    "lastName": "Nair",
+    "email": "ayesha.nair@okstate.edu",
+    "headshot": "",
+    "presentations": [
+      "pres93"
+    ]
+  },
+  "presenter91": {
+    "id": "presenter91",
+    "firstName": "Chinaemerem",
+    "lastName": "Uju Onyishi",
+    "email": "ujubenita@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres94"
+    ]
+  },
+  "presenter92": {
+    "id": "presenter92",
+    "firstName": "Samuel",
+    "lastName": "Okurut",
+    "email": "okuruts@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres95"
+    ]
+  },
+  "presenter93": {
+    "id": "presenter93",
+    "firstName": "Jessica",
+    "lastName": "C. Hargarten",
+    "email": "jh2418@njms.rutgers.edu",
+    "headshot": "",
+    "presentations": [
+      "pres96"
+    ]
+  },
+  "presenter94": {
+    "id": "presenter94",
+    "firstName": "Carolina",
+    "lastName": "Firacative",
+    "email": "cfiracative@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres97",
+      "pres150"
+    ]
+  },
+  "presenter95": {
+    "id": "presenter95",
+    "firstName": "Rebecca",
+    "lastName": "Drummond",
+    "email": "r.drummond@bham.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres98"
+    ]
+  },
+  "presenter96": {
+    "id": "presenter96",
+    "firstName": "William",
+    "lastName": "Newton",
+    "email": "wn257@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres99"
+    ]
+  },
+  "presenter97": {
+    "id": "presenter97",
+    "firstName": "Michal",
+    "lastName": "Olszewski",
+    "email": "olszewsm@med.umich.edu",
+    "headshot": "",
+    "presentations": [
+      "pres100"
+    ]
+  },
+  "presenter98": {
+    "id": "presenter98",
+    "firstName": "Shannon",
+    "lastName": "Evans",
+    "email": "shannon.evans@sheffield.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres101"
+    ]
+  },
+  "presenter99": {
+    "id": "presenter99",
+    "firstName": "Sehrish",
+    "lastName": "Afsheen",
+    "email": "afsheen@wisc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres102"
+    ]
+  },
+  "presenter100": {
+    "id": "presenter100",
+    "firstName": "Amalia",
+    "lastName": "Awala",
+    "email": "amalia.awala@uct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres103"
+    ]
+  },
+  "presenter101": {
+    "id": "presenter101",
+    "firstName": "Simran",
+    "lastName": "Atulkumar Patel",
+    "email": "PTLSIM004@myuct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres104"
+    ]
+  },
+  "presenter102": {
+    "id": "presenter102",
+    "firstName": "Hyunah",
+    "lastName": "Yoon",
+    "email": "hyoon@montefiore.org",
+    "headshot": "",
+    "presentations": [
+      "pres105"
+    ]
+  },
+  "presenter103": {
+    "id": "presenter103",
+    "firstName": "Lara",
+    "lastName": "Roosen",
+    "email": "Lara.roosen@kuleuven.be",
+    "headshot": "",
+    "presentations": [
+      "pres106"
+    ]
+  },
+  "presenter104": {
+    "id": "presenter104",
+    "firstName": "Jake",
+    "lastName": "T. Leinas",
+    "email": "leinasj@bc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres107"
+    ]
+  },
+  "presenter105": {
+    "id": "presenter105",
+    "firstName": "Ying-Kui",
+    "lastName": "Jiang",
+    "email": "ykjiang14@fudan.edu.cn",
+    "headshot": "",
+    "presentations": [
+      "pres108"
+    ]
+  },
+  "presenter106": {
+    "id": "presenter106",
+    "firstName": "Michael",
+    "lastName": "Boucher",
+    "email": "michael.boucher@health.ny.gov",
+    "headshot": "",
+    "presentations": [
+      "pres109"
+    ]
+  },
+  "presenter107": {
+    "id": "presenter107",
+    "firstName": "Zanetta",
+    "lastName": "Chang",
+    "email": "c.zanetta@wustl.edu",
+    "headshot": "",
+    "presentations": [
+      "pres110"
+    ]
+  },
+  "presenter108": {
+    "id": "presenter108",
+    "firstName": "Yanga",
+    "lastName": "Pato",
+    "email": "ptxyan003@myuct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres111"
+    ]
+  },
+  "presenter109": {
+    "id": "presenter109",
+    "firstName": "Jennifer",
+    "lastName": "Tenor",
+    "email": "jennifer.tenor@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres112"
+    ]
+  },
+  "presenter110": {
+    "id": "presenter110",
+    "firstName": "Corinna",
+    "lastName": "Probst",
+    "email": "corinna.probst@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres113"
+    ]
+  },
+  "presenter111": {
+    "id": "presenter111",
+    "firstName": "Linghong",
+    "lastName": "Zhou",
+    "email": "zhoulinghong2016@163.com",
+    "headshot": "",
+    "presentations": [
+      "pres114"
+    ]
+  },
+  "presenter112": {
+    "id": "presenter112",
+    "firstName": "Dries",
+    "lastName": "Maes",
+    "email": "dries.maes@kuleuven.be",
+    "headshot": "",
+    "presentations": [
+      "pres115",
+      "pres117"
+    ]
+  },
+  "presenter113": {
+    "id": "presenter113",
+    "firstName": "Greetje",
+    "lastName": "Vande Velde",
+    "email": "greetje.vandevelde@kuleuven.be",
+    "headshot": "",
+    "presentations": [
+      "pres116"
+    ]
+  },
+  "presenter114": {
+    "id": "presenter114",
+    "firstName": "Christopher",
+    "lastName": "Lee",
+    "email": "christopherwjlee@msl.ubc.ca",
+    "headshot": "",
+    "presentations": [
+      "pres118"
+    ]
+  },
+  "presenter115": {
+    "id": "presenter115",
+    "firstName": "Guanggan",
+    "lastName": "Hu",
+    "email": "hug@msl.ubc.ca",
+    "headshot": "",
+    "presentations": [
+      "pres119"
+    ]
+  },
+  "presenter116": {
+    "id": "presenter116",
+    "firstName": "Mayara",
+    "lastName": "Barbara da Silva",
+    "email": "mayaraba@uoguelph.ca",
+    "headshot": "",
+    "presentations": [
+      "pres120"
+    ]
+  },
+  "presenter117": {
+    "id": "presenter117",
+    "firstName": "Dora",
+    "lastName": "Edith Corzo Leon",
+    "email": "d.e.corzo-leon@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres121"
+    ]
+  },
+  "presenter118": {
+    "id": "presenter118",
+    "firstName": "Qinxi",
+    "lastName": "Ma",
+    "email": "q.ma@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres122"
+    ]
+  },
+  "presenter119": {
+    "id": "presenter119",
+    "firstName": "Karen",
+    "lastName": "Wozniak",
+    "email": "karen.wozniak@okstate.edu",
+    "headshot": "",
+    "presentations": [
+      "pres123"
+    ]
+  },
+  "presenter120": {
+    "id": "presenter120",
+    "firstName": "Tonia",
+    "lastName": "DARGHAM",
+    "email": "tonia.dargham@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres124"
+    ]
+  },
+  "presenter121": {
+    "id": "presenter121",
+    "firstName": "Sebastian",
+    "lastName": "Reusch",
+    "email": "reuschs@rki.de",
+    "headshot": "",
+    "presentations": [
+      "pres125"
+    ]
+  },
+  "presenter122": {
+    "id": "presenter122",
+    "firstName": "Rebecca",
+    "lastName": "Hodges",
+    "email": "rebecca.hodges@sheffield.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres126"
+    ]
+  },
+  "presenter123": {
+    "id": "presenter123",
+    "firstName": "Marie-Gabrielle",
+    "lastName": "Ayika",
+    "email": "mayika@uoguelph.ca",
+    "headshot": "",
+    "presentations": [
+      "pres127"
+    ]
+  },
+  "presenter124": {
+    "id": "presenter124",
+    "firstName": "Jennifer",
+    "lastName": "Geddes-McAlister",
+    "email": "jgeddesm@uoguelph.ca",
+    "headshot": "",
+    "presentations": [
+      "pres128",
+      "pres153"
+    ]
+  },
+  "presenter125": {
+    "id": "presenter125",
+    "firstName": "Robbi",
+    "lastName": "Ross",
+    "email": "rross4@nd.edu",
+    "headshot": "",
+    "presentations": [
+      "pres129"
+    ]
+  },
+  "presenter126": {
+    "id": "presenter126",
+    "firstName": "Felipe",
+    "lastName": "H. Santiago-Tirado",
+    "email": "fsantiago@nd.edu",
+    "headshot": "",
+    "presentations": [
+      "pres130"
+    ]
+  },
+  "presenter127": {
+    "id": "presenter127",
+    "firstName": "Kassandra",
+    "lastName": "Arias-Parbul",
+    "email": "kariaspa@nd.edu",
+    "headshot": "",
+    "presentations": [
+      "pres131"
+    ]
+  },
+  "presenter128": {
+    "id": "presenter128",
+    "firstName": "Dionn",
+    "lastName": "Hargreaves",
+    "email": "d.hargreaves@sheffield.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres132"
+    ]
+  },
+  "presenter129": {
+    "id": "presenter129",
+    "firstName": "Nicolas",
+    "lastName": "Pereira",
+    "email": "nlpereira@wisc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres133"
+    ]
+  },
+  "presenter130": {
+    "id": "presenter130",
+    "firstName": "Analis",
+    "lastName": "Smith",
+    "email": "analissmith12@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres134"
+    ]
+  },
+  "presenter131": {
+    "id": "presenter131",
+    "firstName": "Rachel",
+    "lastName": "Berg-Murante",
+    "email": "rachelaberg@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres135"
+    ]
+  },
+  "presenter132": {
+    "id": "presenter132",
+    "firstName": "Samuel",
+    "lastName": "Rodrigues Dos Santos Junior",
+    "email": "sroadri1@jh.edu",
+    "headshot": "",
+    "presentations": [
+      "pres136"
+    ]
+  },
+  "presenter133": {
+    "id": "presenter133",
+    "firstName": "Master",
+    "lastName": "Chisale",
+    "email": "2648506@dundee.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres137"
+    ]
+  },
+  "presenter134": {
+    "id": "presenter134",
+    "firstName": "Anamelia",
+    "lastName": "Lorenzetti Bocca",
+    "email": "anamelia.bocca@fiocruz.br",
+    "headshot": "",
+    "presentations": [
+      "pres138",
+      "pres140"
+    ]
+  },
+  "presenter135": {
+    "id": "presenter135",
+    "firstName": "Larissa",
+    "lastName": "Fernandes",
+    "email": "larissaf@unb.br",
+    "headshot": "",
+    "presentations": [
+      "pres139"
+    ]
+  },
+  "presenter136": {
+    "id": "presenter136",
+    "firstName": "Ludmila",
+    "lastName": "Gouveia-Eufrasio",
+    "email": "milagouveia@yahoo.com.br",
+    "headshot": "",
+    "presentations": [
+      "pres141"
+    ]
+  },
+  "presenter137": {
+    "id": "presenter137",
+    "firstName": "Leticia",
+    "lastName": "Serafim da Costa",
+    "email": "leticiaserafim@usp.br",
+    "headshot": "",
+    "presentations": [
+      "pres142"
+    ]
+  },
+  "presenter138": {
+    "id": "presenter138",
+    "firstName": "Oscar",
+    "lastName": "Romero",
+    "email": "romerogo@uoguelph.ca",
+    "headshot": "",
+    "presentations": [
+      "pres143"
+    ]
+  },
+  "presenter139": {
+    "id": "presenter139",
+    "firstName": "Manu",
+    "lastName": "De Rycker",
+    "email": "m.derycker@dundee.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres144"
+    ]
+  },
+  "presenter140": {
+    "id": "presenter140",
+    "firstName": "Jessica",
+    "lastName": "Keeran",
+    "email": "jkeeran@clemson.edu",
+    "headshot": "",
+    "presentations": [
+      "pres145"
+    ]
+  },
+  "presenter141": {
+    "id": "presenter141",
+    "firstName": "Sarah",
+    "lastName": "Kimuda",
+    "email": "skimuda@idi.co.ug",
+    "headshot": "",
+    "presentations": [
+      "pres146"
+    ]
+  },
+  "presenter142": {
+    "id": "presenter142",
+    "firstName": "Cynthia",
+    "lastName": "Ahimbisibwe",
+    "email": "ahicyn@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres147"
+    ]
+  },
+  "presenter143": {
+    "id": "presenter143",
+    "firstName": "Uwe",
+    "lastName": "Himmelreich",
+    "email": "uwe.himmelreich@kuleuven.be",
+    "headshot": "",
+    "presentations": [
+      "pres148"
+    ]
+  },
+  "presenter144": {
+    "id": "presenter144",
+    "firstName": "Yu",
+    "lastName": "Zhang",
+    "email": "yz1139@gsbs.rutgers.edu",
+    "headshot": "",
+    "presentations": [
+      "pres149"
+    ]
+  },
+  "presenter145": {
+    "id": "presenter145",
+    "firstName": "Eric",
+    "lastName": "Cheung",
+    "email": "eric.c.k.cheung@utah.edu",
+    "headshot": "",
+    "presentations": [
+      "pres151"
+    ]
+  },
+  "presenter146": {
+    "id": "presenter146",
+    "firstName": "Daniel",
+    "lastName": "A. Santos",
+    "email": "dasufmg@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres152"
+    ]
+  },
+  "presenter147": {
+    "id": "presenter147",
+    "firstName": "Dmytro",
+    "lastName": "Prasolov",
+    "email": "dimaprasolov@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres154"
+    ]
+  },
+  "presenter148": {
+    "id": "presenter148",
+    "firstName": "Kristie",
+    "lastName": "Goughenour",
+    "email": "gkristie@med.umich.edu",
+    "headshot": "",
+    "presentations": [
+      "pres155"
+    ]
+  },
+  "presenter149": {
+    "id": "presenter149",
+    "firstName": "Tiffany",
+    "lastName": "Chang",
+    "email": "chan2372@umn.edu",
+    "headshot": "",
+    "presentations": [
+      "pres156"
+    ]
+  },
+  "presenter150": {
+    "id": "presenter150",
+    "firstName": "Adepemi",
+    "lastName": "O. Ogundeji",
+    "email": "ogundejiao@ufs.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres157"
+    ]
+  },
+  "presenter151": {
+    "id": "presenter151",
+    "firstName": "Priscilla",
+    "lastName": "Atim",
+    "email": "apriscilla@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres158"
+    ]
+  },
+  "presenter152": {
+    "id": "presenter152",
+    "firstName": "Saba",
+    "lastName": "Sana",
+    "email": "saba.sana@gcu.edu.pk",
+    "headshot": "",
+    "presentations": [
+      "pres159"
+    ]
+  },
+  "presenter153": {
+    "id": "presenter153",
+    "firstName": "Joe",
+    "lastName": "Jarvis",
+    "email": "joseph.jarvis@lshtm.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres161"
+    ]
+  },
+  "presenter154": {
+    "id": "presenter154",
+    "firstName": "John",
+    "lastName": "Perfect",
+    "email": "perfe001@mc.duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres164"
+    ]
+  },
+  "presenter155": {
+    "id": "presenter155",
+    "firstName": "Nelesh",
+    "lastName": "Govender",
+    "email": "nelesh.Govender@wits.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres165"
+    ]
+  },
+  "presenter156": {
+    "id": "presenter156",
+    "firstName": "Li-Ping",
+    "lastName": "Zhu",
+    "email": "zhulp@fudan.edu.cn",
+    "headshot": "",
+    "presentations": [
+      "pres166"
+    ]
+  },
+  "presenter157": {
+    "id": "presenter157",
+    "firstName": "Kirsten",
+    "lastName": "Nielsen",
+    "email": "kirstennielsen@vt.edu",
+    "headshot": "",
+    "presentations": [
+      "pres168"
+    ]
+  },
+  "presenter158": {
+    "id": "presenter158",
+    "firstName": "Paul",
+    "lastName": "Magwene",
+    "email": "paul.magwene@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres169"
+    ]
+  },
+  "presenter159": {
+    "id": "presenter159",
+    "firstName": "Radha",
+    "lastName": "Rajasingham",
+    "email": "radha@umn.edu",
+    "headshot": "",
+    "presentations": [
+      "pres172"
+    ]
+  },
+  "presenter160": {
+    "id": "presenter160",
+    "firstName": "David",
+    "lastName": "Engelthaler",
+    "email": "",
+    "headshot": "",
+    "presentations": [
+      "pres178"
+    ]
+  },
+  "presenter161": {
+    "id": "presenter161",
+    "firstName": "Tamara",
+    "lastName": "Doering",
+    "email": "doering@wustl.edu",
+    "headshot": "",
+    "presentations": [
+      "pres179"
+    ]
+  },
+  "presenter162": {
+    "id": "presenter162",
+    "firstName": "Xiaorong",
+    "lastName": "Lin",
+    "email": "",
+    "headshot": "xiaorong.Lin@uga.edu",
+    "presentations": [
+      "pres180"
+    ]
+  },
+  "presenter163": {
+    "id": "presenter163",
+    "firstName": "Christina",
+    "lastName": "Cuomo",
+    "email": "cuomo@broadinstitute.org",
+    "headshot": "",
+    "presentations": [
+      "pres182"
+    ]
+  },
+  "presenter164": {
+    "id": "presenter164",
+    "firstName": "Makoto",
+    "lastName": "Inoue",
+    "email": "makotoi@illinois.edu",
+    "headshot": "",
+    "presentations": [
+      "pres183"
+    ]
+  },
+  "presenter165": {
+    "id": "presenter165",
+    "firstName": "Maurizio",
+    "lastName": "Del Poeta",
+    "email": "maurizio.delpoeta@stonybrook.edu",
+    "headshot": "",
+    "presentations": [
+      "pres184"
+    ]
+  },
+  "presenter166": {
+    "id": "presenter166",
+    "firstName": "Marco",
+    "lastName": "Coelho",
+    "email": "marco.dias.coelho@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres187"
+    ]
+  },
+  "presenter167": {
+    "id": "presenter167",
+    "firstName": "Robin",
+    "lastName": "May",
+    "email": "r.c.may@bham.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres190"
+    ]
+  },
+  "presenter168": {
+    "id": "presenter168",
+    "firstName": "Sarah",
+    "lastName": "Gurr",
+    "email": "S.J.Gurr@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres191"
+    ]
+  },
+  "presenter169": {
+    "id": "presenter169",
+    "firstName": "Baroness Natalie",
+    "lastName": "Bennett",
+    "email": "bennettn@parliament.uk",
+    "headshot": "",
+    "presentations": [
+      "pres192"
+    ]
+  },
+  "presenter170": {
+    "id": "presenter170",
+    "firstName": "Eric",
+    "lastName": "Dang",
+    "email": "",
+    "headshot": "",
+    "presentations": [
+      "pres196"
+    ]
+  },
+  "presenter171": {
+    "id": "presenter171",
+    "firstName": "Rachael",
+    "lastName": "Dangarembizi",
+    "email": "rachael.dangarembizi@uct.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres197"
+    ]
+  },
+  "presenter172": {
+    "id": "presenter172",
+    "firstName": "Lena",
+    "lastName": "Heung",
+    "email": "Lena.Heung@csmc.edu",
+    "headshot": "",
+    "presentations": [
+      "pres198"
+    ]
+  },
+  "presenter173": {
+    "id": "presenter173",
+    "firstName": "Jessica",
+    "lastName": "Brown",
+    "email": "brown@biology.utah.edu",
+    "headshot": "",
+    "presentations": [
+      "pres200"
+    ]
+  },
+  "presenter174": {
+    "id": "presenter174",
+    "firstName": "Márcio",
+    "lastName": "Rodrigues",
+    "email": "marcio.rodrigues@fiocruz.br",
+    "headshot": "",
+    "presentations": [
+      "pres201"
+    ]
+  },
+  "presenter175": {
+    "id": "presenter175",
+    "firstName": "Serisha",
+    "lastName": "Naicker",
+    "email": "serishan@nicd.ac.za",
+    "headshot": "",
+    "presentations": [
+      "pres205"
+    ]
+  },
+  "presenter176": {
+    "id": "presenter176",
+    "firstName": "Asiya",
+    "lastName": "Gusa",
+    "email": "asiya.gusa@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres206"
+    ]
+  },
+  "presenter177": {
+    "id": "presenter177",
+    "firstName": "Kaustuv",
+    "lastName": "Sanyal",
+    "email": "sanyal@jncasr.ac.in",
+    "headshot": "",
+    "presentations": [
+      "pres209"
+    ]
+  },
+  "presenter178": {
+    "id": "presenter178",
+    "firstName": "Guilhem",
+    "lastName": "Janbon",
+    "email": "sjanbon@pasteur.fr",
+    "headshot": "",
+    "presentations": [
+      "pres210"
+    ]
+  },
+  "presenter179": {
+    "id": "presenter179",
+    "firstName": "Hiten",
+    "lastName": "Madhani",
+    "email": "hitenmadhani@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres212"
+    ]
+  },
+  "presenter180": {
+    "id": "presenter180",
+    "firstName": "Evelina",
+    "lastName": "Basenko",
+    "email": "e.basenko@liverpool.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres213"
+    ]
+  },
+  "presenter181": {
+    "id": "presenter181",
+    "firstName": "Edward",
+    "lastName": "Wallace",
+    "email": "edward.wallace@ed.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres216"
+    ]
+  },
+  "presenter182": {
+    "id": "presenter182",
+    "firstName": "Tom",
+    "lastName": "Harrison",
+    "email": "T.S.Harrison@exeter.ac.uk",
+    "headshot": "",
+    "presentations": [
+      "pres220"
+    ]
+  },
+  "presenter183": {
+    "id": "presenter183",
+    "firstName": "David",
+    "lastName": "Boulware",
+    "email": "boulw001@umn.edu",
+    "headshot": "",
+    "presentations": [
+      "pres221"
+    ]
+  },
+  "presenter184": {
+    "id": "presenter184",
+    "firstName": "David",
+    "lastName": "Meya",
+    "email": "David.meya@gmail.com",
+    "headshot": "",
+    "presentations": [
+      "pres222"
+    ]
+  },
+  "presenter185": {
+    "id": "presenter185",
+    "firstName": "Linqi",
+    "lastName": "Wang",
+    "email": "wanglq@im.ac.cn",
+    "headshot": "",
+    "presentations": [
+      "pres224"
+    ]
+  },
+  "presenter186": {
+    "id": "presenter186",
+    "firstName": "Stuart",
+    "lastName": "Levitz",
+    "email": "stuart.levitz@umassmed.edu",
+    "headshot": "",
+    "presentations": [
+      "pres225"
+    ]
+  },
+  "presenter187": {
+    "id": "presenter187",
+    "firstName": "Joseph",
+    "lastName": "Heitman",
+    "email": "heitm001@duke.edu",
+    "headshot": "",
+    "presentations": [
+      "pres226"
+    ]
+  }
+}

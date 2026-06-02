@@ -1,8 +1,8 @@
 import "dart:convert";
-
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
-import "package:forui/forui.dart";
+import "package:iccc2026/widgets/schedule_card.dart";
+import "package:iccc2026/models/presentation.dart";
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({super.key});
@@ -156,7 +156,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                                   return Expanded(
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 8),
-                                      child: _ScheduleCard(
+                                      child: ScheduleCard(
                                         presentation: presentation,
                                         itemsInRow: presentations.length,
                                       ),
@@ -230,144 +230,5 @@ class _LegendItem {
   final Color color;
 }
 
-class _ScheduleCard extends StatelessWidget {
-  const _ScheduleCard({required this.presentation, required this.itemsInRow});
 
-  final Presentation presentation;
-  final int itemsInRow;
 
-  double get titleFontSize {
-    if (itemsInRow >= 3) return 10;
-    if (itemsInRow == 2) return 12;
-    return 14;
-  }
-
-  double get presenterFontSize {
-    if (itemsInRow >= 3) return 11;
-    if (itemsInRow == 2) return 13;
-    return 15;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return FTappable(
-      onPress: () {
-        // Details navigation will go here later.
-      },
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          color: presentation.trackColor.withValues(alpha: 0.85),
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.08),
-              blurRadius: 8,
-              offset: const Offset(0, 3),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              presentation.isMealOrSpecial
-                  ? presentation.displayTitle
-                  : '"${presentation.displayTitle}"',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: titleFontSize,
-                fontWeight: presentation.isMealOrSpecial
-                    ? FontWeight.bold
-                    : FontWeight.normal,
-                color: Colors.black,
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              presentation.presenterName,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: presenterFontSize,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class Presentation {
-  const Presentation({
-    required this.id,
-    required this.title,
-    required this.type,
-    required this.track,
-    required this.day,
-    required this.startTime,
-    required this.endTime,
-    required this.presenterFirstName,
-    required this.presenterLastNames,
-  });
-
-  final String id;
-  final String title;
-  final String type;
-  final String track;
-  final int day;
-  final String startTime;
-  final String endTime;
-  final String presenterFirstName;
-  final String presenterLastNames;
-
-  factory Presentation.fromJson(String id, Map<String, dynamic> json) {
-    return Presentation(
-      id: id,
-      title: json["title"]?.toString() ?? "",
-      type: json["type"]?.toString().trim().toLowerCase() ?? "",
-      track: json["track"]?.toString().trim().toLowerCase() ?? "",
-      day: int.tryParse(json["day"]?.toString() ?? "") ?? 0,
-      startTime: json["startTime"]?.toString() ?? "",
-      endTime: json["endTime"]?.toString() ?? "",
-      presenterFirstName: json["presenterFirstName"]?.toString() ?? "",
-      presenterLastNames: json["presenterLastNames"]?.toString() ?? "",
-    );
-  }
-
-  String get displayTitle {
-    if (title.trim().isEmpty) return "Title Pending";
-    return title.trim();
-  }
-
-  String get presenterName {
-    final name = "$presenterFirstName $presenterLastNames".trim();
-    return name.isEmpty ? "" : name;
-  }
-
-  bool get isMealOrSpecial {
-    return type == "meal" || track == "special";
-  }
-
-  Color get trackColor {
-    switch (track) {
-      case "clinicaladv":
-        return Colors.grey;
-      case "drugs":
-        return Colors.yellow;
-      case "genomics":
-        return Colors.orange;
-      case "hostpathogen":
-        return Colors.purpleAccent;
-      case "immunology":
-        return Colors.pink;
-      case "cellbio":
-        return Colors.lightBlue;
-      default:
-        return Colors.greenAccent;
-    }
-  }
-}
