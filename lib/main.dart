@@ -1,11 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:forui/forui.dart';
-import 'package:iccc2026/home_screen.dart';
+import 'package:iccc2026/screens/home_screen.dart';
 
 void main() {
   runApp(const Application());
 }
+
+final RouteObserver<ModalRoute<void>> routeObserver =
+    RouteObserver<ModalRoute<void>>();
 
 class Application extends StatelessWidget {
   const Application({super.key});
@@ -28,6 +31,7 @@ class Application extends StatelessWidget {
         : FThemes.green.dark.desktop;
 
     return MaterialApp(
+      navigatorObservers: [routeObserver],
       debugShowCheckedModeBanner: false,
       supportedLocales: FLocalizations.supportedLocales,
       localizationsDelegates: const [...FLocalizations.localizationsDelegates],

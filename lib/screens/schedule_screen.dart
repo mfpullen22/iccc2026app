@@ -1,8 +1,7 @@
-import "dart:convert";
 import "package:flutter/material.dart";
-import "package:flutter/services.dart";
 import "package:iccc2026/widgets/schedule_card.dart";
 import "package:iccc2026/models/presentation.dart";
+import "package:iccc2026/repositories/local_json_conference_repository.dart";
 
 class ScheduleScreen extends StatefulWidget {
   const ScheduleScreen({super.key});
@@ -12,15 +11,18 @@ class ScheduleScreen extends StatefulWidget {
 }
 
 class _ScheduleScreenState extends State<ScheduleScreen> {
-  int _selectedDay = 1;
+  int _selectedDay = 0;
   late Future<List<Presentation>> _presentationsFuture;
+  final LocalJsonConferenceRepository _repository =
+      const LocalJsonConferenceRepository();
 
   static const Map<int, String> _dayLabels = {
-    1: "Monday, June 28",
-    2: "Tuesday, June 29",
-    3: "Wednesday, June 30",
-    4: "Thursday, July 1",
-    5: "Friday, July 2",
+    0: "Sunday, June 28",
+    1: "Monday, June 29",
+    2: "Tuesday, June 30",
+    3: "Wednesday, July 1",
+    4: "Thursday, July 2",
+    5: "Friday, July 3",
   };
 
   @override
@@ -30,22 +32,14 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   }
 
   Future<List<Presentation>> _loadPresentations() async {
-    final jsonString = await rootBundle.loadString("data/presentations.json");
+    final presentations = await _repository.getPresentations();
 
-    final decoded = jsonDecode(jsonString) as Map<String, dynamic>;
-
-    return decoded.entries
-        .map((entry) {
-          return Presentation.fromJson(
-            entry.key,
-            entry.value as Map<String, dynamic>,
-          );
-        })
+    return presentations
         .where((presentation) {
           return presentation.type == "talk" || presentation.type == "meal";
         })
         .where((presentation) {
-          return presentation.day >= 1 && presentation.day <= 5;
+          return presentation.day >= 0 && presentation.day <= 5;
         })
         .where((presentation) {
           return presentation.startTime.isNotEmpty;
@@ -87,7 +81,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   child: Row(
                     children: [
                       IconButton(
-                        onPressed: _selectedDay == 1
+                        onPressed: _selectedDay == 0
                             ? null
                             : () {
                                 setState(() {
@@ -229,6 +223,3 @@ class _LegendItem {
   final String label;
   final Color color;
 }
-
-
-
