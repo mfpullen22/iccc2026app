@@ -8,6 +8,7 @@ import "package:iccc2026/models/presentation.dart";
 import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:iccc2026/screens/presenters_screen.dart";
 import "package:iccc2026/screens/schedule_screen.dart";
+import "package:iccc2026/screens/abstracts_screen.dart";
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -258,7 +259,13 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                     icon: FIcons.fileText,
                     title: "Abstracts",
                     subtitle: "Search posters & talks",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const AbstractsScreen(),
+                        ),
+                      );
+                    },
                   ),
                   _HomeNavCard(
                     icon: FIcons.map,
