@@ -3,6 +3,7 @@ import "package:iccc2026/models/presenter.dart";
 import "package:iccc2026/repositories/conference_repository.dart";
 import "package:iccc2026/repositories/local_json_conference_repository.dart";
 import "package:iccc2026/screens/presenter_details_screen.dart";
+import "package:iccc2026/utils/smooth_page_route.dart";
 
 class PresentersScreen extends StatefulWidget {
   const PresentersScreen({
@@ -50,101 +51,122 @@ class _PresentersScreenState extends State<PresentersScreen> {
     }).toList();
   }
 
+  void _openPresenterDetails(Presenter presenter) {
+    Navigator.of(context).push(
+      smoothPageRoute(
+        builder: (_) => PresenterDetailsScreen(
+          presenter: presenter,
+          repository: widget.repository,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Presenters")),
       body: SafeArea(
-        child: FutureBuilder<List<Presenter>>(
-          future: _presentersFuture,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
-
-            if (snapshot.hasError) {
-              return Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: Text(
-                    "Unable to load presenters.\n\n${snapshot.error}",
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              );
-            }
-
-            final presenters = _filterPresenters(snapshot.data ?? []);
-
-            return Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                  child: TextField(
-                    controller: _searchController,
-                    decoration: InputDecoration(
-                      hintText: "Search presenters",
-                      prefixIcon: const Icon(Icons.search),
-                      suffixIcon: _searchText.isEmpty
-                          ? null
-                          : IconButton(
-                              icon: const Icon(Icons.clear),
-                              onPressed: _searchController.clear,
-                            ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: presenters.isEmpty
-                      ? const Center(child: Text("No presenters found."))
-                      : ListView.builder(
-                          padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-                          itemCount: presenters.length,
-                          itemBuilder: (context, index) {
-                            final presenter = presenters[index];
-
-                            return Padding(
-                              padding: const EdgeInsets.only(bottom: 10),
-                              child: Card(
-                                clipBehavior: Clip.antiAlias,
-                                elevation: 1,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(18),
-                                ),
-                                child: ListTile(
-                                  contentPadding: const EdgeInsets.symmetric(
-                                    horizontal: 18,
-                                    vertical: 8,
-                                  ),
-                                  title: Text(
-                                    presenter.fullName,
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  trailing: const Icon(Icons.chevron_right),
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                      MaterialPageRoute(
-                                        builder: (_) => PresenterDetailsScreen(
-                                          presenter: presenter,
-                                          repository: widget.repository,
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ),
-                            );
-                          },
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+              child: TextField(
+                controller: _searchController,
+                decoration: InputDecoration(
+                  hintText: "Search presenters",
+                  prefixIcon: const Icon(Icons.search),
+                  suffixIcon: _searchText.isEmpty
+                      ? null
+                      : IconButton(
+                          icon: const Icon(Icons.clear),
+                          onPressed: _searchController.clear,
                         ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                 ),
-              ],
-            );
-          },
+              ),
+            ),
+            Expanded(
+              child: FutureBuilder<List<Presenter>>(
+                future: _presentersFuture,
+                builder: (context, snapshot) {
+                  Widget child;
+
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    child = const Center(
+                      key: ValueKey("presenters-loading"),
+                      child: CircularProgressIndicator(),
+                    );
+                  } else if (snapshot.hasError) {
+                    child = Center(
+                      key: const ValueKey("presenters-error"),
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Text(
+                          "Unable to load presenters.\n\n${snapshot.error}",
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    );
+                  } else {
+                    final presenters = _filterPresenters(snapshot.data ?? []);
+
+                    if (presenters.isEmpty) {
+                      child = const Center(
+                        key: ValueKey("presenters-empty"),
+                        child: Text("No presenters found."),
+                      );
+                    } else {
+                      child = ListView.builder(
+                        key: const ValueKey("presenters-list"),
+                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
+                        itemCount: presenters.length,
+                        itemBuilder: (context, index) {
+                          final presenter = presenters[index];
+
+                          return Padding(
+                            padding: const EdgeInsets.only(bottom: 10),
+                            child: Card(
+                              clipBehavior: Clip.antiAlias,
+                              elevation: 1,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18),
+                              ),
+                              child: ListTile(
+                                contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 18,
+                                  vertical: 8,
+                                ),
+                                title: Text(
+                                  presenter.fullName,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                trailing: const Icon(Icons.chevron_right),
+                                onTap: () {
+                                  _openPresenterDetails(presenter);
+                                },
+                              ),
+                            ),
+                          );
+                        },
+                      );
+                    }
+                  }
+
+                  return AnimatedSwitcher(
+                    duration: const Duration(milliseconds: 220),
+                    switchInCurve: Curves.easeOutCubic,
+                    switchOutCurve: Curves.easeInCubic,
+                    child: child,
+                  );
+                },
+              ),
+            ),
+          ],
         ),
       ),
     );

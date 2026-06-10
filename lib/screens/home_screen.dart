@@ -9,6 +9,7 @@ import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:iccc2026/screens/presenters_screen.dart";
 import "package:iccc2026/screens/schedule_screen.dart";
 import "package:iccc2026/screens/abstracts_screen.dart";
+import "package:iccc2026/utils/smooth_page_route.dart";
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -201,82 +202,84 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
 
     final liveCardHeight = (screenHeight * 0.28).clamp(185.0, 235.0).toDouble();
 
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            _LogoHeroCard(theme: theme),
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              _LogoHeroCard(theme: theme),
 
-            const SizedBox(height: 12),
+              const SizedBox(height: 12),
 
-            SizedBox(
-              height: liveCardHeight,
-              child: _LiveSessionsCard(
-                isLoading: _isLoadingSessions,
-                errorMessage: _sessionLoadError,
-                currentSessions: _currentSessions(),
-                nextSessions: _nextSessions(),
-                timeLabelBuilder: _sessionTimeLabel,
+              SizedBox(
+                height: liveCardHeight,
+                child: _LiveSessionsCard(
+                  isLoading: _isLoadingSessions,
+                  errorMessage: _sessionLoadError,
+                  currentSessions: _currentSessions(),
+                  nextSessions: _nextSessions(),
+                  timeLabelBuilder: _sessionTimeLabel,
+                ),
               ),
-            ),
 
-            const SizedBox(height: 12),
+              const SizedBox(height: 12),
 
-            Expanded(
-              child: GridView.count(
-                physics: const NeverScrollableScrollPhysics(),
-                crossAxisCount: 2,
-                mainAxisSpacing: 12,
-                crossAxisSpacing: 12,
-                childAspectRatio: 1.35,
-                children: [
-                  _HomeNavCard(
-                    icon: FIcons.calendarDays,
-                    title: "Schedule",
-                    subtitle: "View sessions",
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ScheduleScreen(),
-                        ),
-                      );
-                    },
-                  ),
-                  _HomeNavCard(
-                    icon: FIcons.users,
-                    title: "Presenters",
-                    subtitle: "Browse speakers",
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const PresentersScreen(),
-                        ),
-                      );
-                    },
-                  ),
-                  _HomeNavCard(
-                    icon: FIcons.fileText,
-                    title: "Abstracts",
-                    subtitle: "Search posters & talks",
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const AbstractsScreen(),
-                        ),
-                      );
-                    },
-                  ),
-                  _HomeNavCard(
-                    icon: FIcons.map,
-                    title: "Venue",
-                    subtitle: "Maps & info",
-                    onTap: () {},
-                  ),
-                ],
+              Expanded(
+                child: GridView.count(
+                  physics: const NeverScrollableScrollPhysics(),
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
+                  childAspectRatio: 1.35,
+                  children: [
+                    _HomeNavCard(
+                      icon: FIcons.calendarDays,
+                      title: "Schedule",
+                      subtitle: "View sessions",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(
+                            builder: (_) => const ScheduleScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    _HomeNavCard(
+                      icon: FIcons.users,
+                      title: "Presenters",
+                      subtitle: "Browse speakers",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(
+                            builder: (_) => const PresentersScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    _HomeNavCard(
+                      icon: FIcons.fileText,
+                      title: "Abstracts",
+                      subtitle: "Search posters & talks",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(
+                            builder: (_) => const AbstractsScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    _HomeNavCard(
+                      icon: FIcons.map,
+                      title: "Venue",
+                      subtitle: "Maps & info",
+                      onTap: () {},
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -510,10 +513,8 @@ class _CompactSessionCard extends StatelessWidget {
     return FTappable(
       onPress: () {
         Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) {
-              return PresentationDetailsScreen(presentation: session);
-            },
+          smoothPageRoute(
+            builder: (_) => PresentationDetailsScreen(presentation: session),
           ),
         );
       },
