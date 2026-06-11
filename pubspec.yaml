@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   forui: ^0.21.3
   url_launcher: ^6.3.2
+  flutter_launcher_icons: ^0.14.4
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +63,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icon/
     - data/presentations.json
     - data/presenters.json
   #   - images/a_dot_ham.jpeg
