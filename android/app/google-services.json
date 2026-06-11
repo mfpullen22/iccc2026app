@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289930628776",
+    "project_id": "iccc2026",
+    "storage_bucket": "iccc2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289930628776:android:9a39cd529aced9630d3c9d",
+        "android_client_info": {
+          "package_name": "com.example.iccc2026"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPD0cpejD1FDxy2sL3Gxfv9c17rC5t7sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
