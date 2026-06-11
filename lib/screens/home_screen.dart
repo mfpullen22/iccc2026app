@@ -9,6 +9,7 @@ import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:iccc2026/screens/presenters_screen.dart";
 import "package:iccc2026/screens/schedule_screen.dart";
 import "package:iccc2026/screens/abstracts_screen.dart";
+import "package:iccc2026/screens/venue_screen.dart";
 import "package:iccc2026/utils/smooth_page_route.dart";
 
 class HomeScreen extends StatefulWidget {
@@ -273,7 +274,11 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                       icon: FIcons.map,
                       title: "Venue",
                       subtitle: "Maps & info",
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(builder: (_) => const VenueScreen()),
+                        );
+                      },
                     ),
                   ],
                 ),
