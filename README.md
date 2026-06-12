@@ -1,16 +1,80 @@
-# iccc2026
+# ICCC 2026 Conference App
 
-A new Flutter project.
+<p align="center">
+  <img src="assets/images/ICCC_logo.jpg" alt="ICCC 2026 Logo" width="220"/>
+</p>
 
-## Getting Started
+<p align="center">
+  <strong>The official mobile guide for the International Conference on Cryptococcus and Cryptococcosis 2026.</strong>
+</p>
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <em>Schedule. Abstracts. Presenters. Venue information. All in one place.</em>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Overview
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The **ICCC 2026 Conference App** is a Flutter-based mobile application designed for attendees of the **International Conference on Cryptococcus and Cryptococcosis 2026**, held at **The Forum, University of Exeter, UK**.
+
+The app provides a streamlined mobile experience for navigating the conference program, browsing presentations, searching abstracts, reviewing presenter information, and accessing key venue and travel details.
+
+This project was built to make the conference experience easier, faster, and more accessible for attendees, presenters, and organizers.
+
+---
+
+## Features
+
+- **Conference Schedule**  
+  Browse sessions by day and view presentation timing, tracks, and session details.
+
+- **Presentation Details**  
+  View titles, presenters, abstracts, session types, tracks, and presentation times.
+
+- **Searchable Abstracts**  
+  Quickly search conference abstracts and presentations.
+
+- **Presenter Directory**  
+  Browse presenters and access presentation information linked to each speaker.
+
+- **Venue Information**  
+  Access travel guidance and location details for The Forum, University of Exeter.
+
+- **Mobile-Friendly Interface**  
+  Clean, responsive design optimized for use during the conference.
+
+---
+
+## Built With
+
+- [Flutter](https://flutter.dev/) — cross-platform mobile app framework
+- [Dart](https://dart.dev/) — application programming language
+- [Firebase](https://firebase.google.com/) — backend services and authentication
+- [ForUI](https://forui.dev/) — Flutter UI component library
+
+---
+
+## Project Structure
+
+```text
+lib/
+├── main.dart
+├── models/
+│   ├── presentation.dart
+│   └── presenter.dart
+├── screens/
+│   ├── home_screen.dart
+│   ├── schedule_screen.dart
+│   ├── abstracts_screen.dart
+│   ├── presenters_screen.dart
+│   ├── presentation_details_screen.dart
+│   └── venue_screen.dart
+├── widgets/
+│   └── ...
+assets/
+├── images/
+│   └── ICCC_logo.jpg
+data/
+├── presentations.json
+└── presenters.json
