@@ -1,10 +1,18 @@
 import "package:flutter/material.dart";
 import "package:iccc2026/widgets/schedule_card.dart";
 import "package:iccc2026/models/presentation.dart";
-import "package:iccc2026/repositories/local_json_conference_repository.dart";
+//import "package:iccc2026/repositories/local_json_conference_repository.dart";
+import "package:iccc2026/repositories/conference_repository.dart";
+import "package:iccc2026/repositories/firebase_conference_repository.dart";
+import "package:iccc2026/services/favorites_service.dart";
 
 class ScheduleScreen extends StatefulWidget {
-  const ScheduleScreen({super.key});
+  const ScheduleScreen({
+    super.key,
+    this.repository = const FirebaseConferenceRepository(),
+  });
+
+  final ConferenceRepository repository;
 
   @override
   State<ScheduleScreen> createState() => _ScheduleScreenState();
@@ -12,11 +20,12 @@ class ScheduleScreen extends StatefulWidget {
 
 class _ScheduleScreenState extends State<ScheduleScreen> {
   int _selectedDay = 0;
-
+  final FavoritesService _favoritesService = const FavoritesService();
   late final Future<List<Presentation>> _presentationsFuture;
 
-  final LocalJsonConferenceRepository _repository =
-      const LocalJsonConferenceRepository();
+  //final LocalJsonConferenceRepository _repository =
+  //const LocalJsonConferenceRepository();
+  final ConferenceRepository _repository = const FirebaseConferenceRepository();
 
   static const Map<int, String> _dayLabels = {
     0: "Sunday, June 28",
@@ -34,20 +43,31 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   }
 
   Future<List<Presentation>> _loadPresentations() async {
-    final presentations = await _repository.getPresentations();
+    final presentations = await widget.repository.getPresentations();
 
-    return presentations
-        .where((presentation) {
-          return presentation.type == "talk" || presentation.type == "meal";
-        })
-        .where((presentation) {
-          return presentation.day >= 0 && presentation.day <= 5;
-        })
-        .where((presentation) {
-          return presentation.startTime.isNotEmpty;
-        })
-        .toList()
-      ..sort((a, b) => a.startTime.compareTo(b.startTime));
+    final scheduleItems = presentations.where((presentation) {
+      final type = presentation.type.trim().toLowerCase();
+
+      final isScheduledType = type == "talk" || type == "meal";
+      final hasValidDay = presentation.day >= 0 && presentation.day <= 5;
+      final hasStartTime = presentation.startTime.trim().isNotEmpty;
+
+      return isScheduledType && hasValidDay && hasStartTime;
+    }).toList();
+
+    scheduleItems.sort((a, b) {
+      final dayComparison = a.day.compareTo(b.day);
+      if (dayComparison != 0) return dayComparison;
+
+      final timeComparison = a.startTime.compareTo(b.startTime);
+      if (timeComparison != 0) return timeComparison;
+
+      return a.displayTitle.toLowerCase().compareTo(
+        b.displayTitle.toLowerCase(),
+      );
+    });
+
+    return scheduleItems;
   }
 
   void _goToPreviousDay() {
@@ -88,7 +108,10 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
     return groupedByStartTime;
   }
 
-  Widget _buildScheduleList(List<Presentation> presentations) {
+  Widget _buildScheduleList(
+    List<Presentation> presentations,
+    Set<String> favoriteIds,
+  ) {
     final dayPresentations = _presentationsForSelectedDay(presentations);
     final groupedByStartTime = _groupPresentationsByStartTime(dayPresentations);
 
@@ -129,13 +152,30 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: presentationsAtTime.map((presentation) {
                     final isLast = presentation == presentationsAtTime.last;
+                    final isFavorite = favoriteIds.contains(presentation.id);
 
                     return Expanded(
                       child: Padding(
                         padding: EdgeInsets.only(right: isLast ? 0 : 8),
-                        child: ScheduleCard(
-                          presentation: presentation,
-                          itemsInRow: presentationsAtTime.length,
+                        child: Stack(
+                          children: [
+                            ScheduleCard(
+                              presentation: presentation,
+                              itemsInRow: presentationsAtTime.length,
+                            ),
+                            if (isFavorite)
+                              const Positioned(
+                                top: 6,
+                                right: 6,
+                                child: IgnorePointer(
+                                  child: Icon(
+                                    Icons.star,
+                                    size: 18,
+                                    color: Colors.amber,
+                                  ),
+                                ),
+                              ),
+                          ],
                         ),
                       ),
                     );
@@ -152,27 +192,60 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
   Widget _buildScheduleContent() {
     return FutureBuilder<List<Presentation>>(
       future: _presentationsFuture,
-      builder: (context, snapshot) {
+      builder: (context, presentationSnapshot) {
         Widget child;
 
-        if (snapshot.connectionState == ConnectionState.waiting) {
+        if (presentationSnapshot.connectionState == ConnectionState.waiting) {
           child = const Center(
             key: ValueKey("schedule-loading"),
             child: CircularProgressIndicator(),
           );
-        } else if (snapshot.hasError) {
+        } else if (presentationSnapshot.hasError) {
           child = Center(
             key: const ValueKey("schedule-error"),
             child: Padding(
               padding: const EdgeInsets.all(24),
               child: Text(
-                "Unable to load schedule.\n\n${snapshot.error}",
+                "Unable to load schedule.\n\n${presentationSnapshot.error}",
                 textAlign: TextAlign.center,
               ),
             ),
           );
         } else {
-          child = _buildScheduleList(snapshot.data ?? []);
+          return StreamBuilder<Set<String>>(
+            stream: _favoritesService.favoriteIdsStream(),
+            builder: (context, favoritesSnapshot) {
+              final favoriteIds = favoritesSnapshot.data ?? <String>{};
+
+              final child = _buildScheduleList(
+                presentationSnapshot.data ?? [],
+                favoriteIds,
+              );
+
+              return AnimatedSwitcher(
+                duration: const Duration(milliseconds: 220),
+                switchInCurve: Curves.easeOutCubic,
+                switchOutCurve: Curves.easeInCubic,
+                transitionBuilder: (child, animation) {
+                  final offsetAnimation = animation.drive(
+                    Tween<Offset>(
+                      begin: const Offset(0.025, 0),
+                      end: Offset.zero,
+                    ).chain(CurveTween(curve: Curves.easeOutCubic)),
+                  );
+
+                  return FadeTransition(
+                    opacity: animation,
+                    child: SlideTransition(
+                      position: offsetAnimation,
+                      child: child,
+                    ),
+                  );
+                },
+                child: child,
+              );
+            },
+          );
         }
 
         return AnimatedSwitcher(

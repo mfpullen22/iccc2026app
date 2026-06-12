@@ -1,11 +1,20 @@
 import "package:flutter/material.dart";
 import "package:iccc2026/models/presentation.dart";
+import "package:iccc2026/services/favorites_service.dart";
 import "package:url_launcher/url_launcher.dart";
 
-class PresentationDetailsScreen extends StatelessWidget {
+class PresentationDetailsScreen extends StatefulWidget {
   const PresentationDetailsScreen({super.key, required this.presentation});
 
   final Presentation presentation;
+
+  @override
+  State<PresentationDetailsScreen> createState() =>
+      _PresentationDetailsScreenState();
+}
+
+class _PresentationDetailsScreenState extends State<PresentationDetailsScreen> {
+  final FavoritesService _favoritesService = const FavoritesService();
 
   Future<void> _sendEmail(BuildContext context, String email) async {
     final Uri emailUri = Uri(scheme: "mailto", path: email);
@@ -22,15 +31,54 @@ class PresentationDetailsScreen extends StatelessWidget {
     }
   }
 
+  Future<void> _toggleFavorite(bool currentlyFavorite) async {
+    try {
+      await _favoritesService.toggleFavorite(
+        presentationId: widget.presentation.id,
+        currentlyFavorite: currentlyFavorite,
+      );
+    } catch (_) {
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text("Unable to update favorite. Please try again."),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    final hasTitle = presentation.title.trim().isNotEmpty;
+    final hasTitle = widget.presentation.title.trim().isNotEmpty;
     final displayTitle = hasTitle
-        ? '"${presentation.displayTitle}"'
+        ? '"${widget.presentation.displayTitle}"'
         : "Title Pending";
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Presentation Details")),
+      appBar: AppBar(
+        title: const Text("Presentation Details"),
+        actions: [
+          StreamBuilder<Set<String>>(
+            stream: _favoritesService.favoriteIdsStream(),
+            builder: (context, snapshot) {
+              final favoriteIds = snapshot.data ?? <String>{};
+              final isFavorite = favoriteIds.contains(widget.presentation.id);
+
+              return IconButton(
+                tooltip: isFavorite
+                    ? "Remove from favorites"
+                    : "Add to favorites",
+                icon: Icon(
+                  isFavorite ? Icons.star : Icons.star_border,
+                  color: isFavorite ? Colors.amber : null,
+                ),
+                onPressed: () => _toggleFavorite(isFavorite),
+              );
+            },
+          ),
+        ],
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 28),
@@ -38,18 +86,21 @@ class PresentationDetailsScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _DetailsHeaderCard(
-                presentation: presentation,
+                presentation: widget.presentation,
                 displayTitle: displayTitle,
               ),
               const SizedBox(height: 14),
               _PresenterCard(
-                presentation: presentation,
+                presentation: widget.presentation,
                 onEmailTap: () {
-                  _sendEmail(context, presentation.presenterEmail.trim());
+                  _sendEmail(
+                    context,
+                    widget.presentation.presenterEmail.trim(),
+                  );
                 },
               ),
               const SizedBox(height: 14),
-              _AbstractCard(presentation: presentation),
+              _AbstractCard(presentation: widget.presentation),
             ],
           ),
         ),

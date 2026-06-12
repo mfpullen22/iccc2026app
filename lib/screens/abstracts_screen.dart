@@ -1,14 +1,16 @@
 import "package:flutter/material.dart";
 import "package:iccc2026/models/presentation.dart";
 import "package:iccc2026/repositories/conference_repository.dart";
-import "package:iccc2026/repositories/local_json_conference_repository.dart";
+//import "package:iccc2026/repositories/local_json_conference_repository.dart";
+import "package:iccc2026/repositories/firebase_conference_repository.dart";
 import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:iccc2026/utils/smooth_page_route.dart";
 
 class AbstractsScreen extends StatefulWidget {
   const AbstractsScreen({
     super.key,
-    this.repository = const LocalJsonConferenceRepository(),
+    //this.repository = const LocalJsonConferenceRepository(),
+    this.repository = const FirebaseConferenceRepository(),
   });
 
   final ConferenceRepository repository;

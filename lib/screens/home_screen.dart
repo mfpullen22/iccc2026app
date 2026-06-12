@@ -1,9 +1,11 @@
 import "dart:async";
-import "dart:convert";
+//import "dart:convert";
 import "package:iccc2026/main.dart";
 import "package:flutter/material.dart";
-import "package:flutter/services.dart";
+//import "package:flutter/services.dart";
 import "package:forui/forui.dart";
+import "package:iccc2026/repositories/conference_repository.dart";
+import "package:iccc2026/repositories/firebase_conference_repository.dart";
 import "package:iccc2026/models/presentation.dart";
 import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:iccc2026/screens/presenters_screen.dart";
@@ -11,9 +13,16 @@ import "package:iccc2026/screens/schedule_screen.dart";
 import "package:iccc2026/screens/abstracts_screen.dart";
 import "package:iccc2026/screens/venue_screen.dart";
 import "package:iccc2026/utils/smooth_page_route.dart";
+import "package:iccc2026/screens/favorites_screen.dart";
+import "package:iccc2026/screens/my_account_screen.dart";
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({
+    super.key,
+    this.repository = const FirebaseConferenceRepository(),
+  });
+
+  final ConferenceRepository repository;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -70,16 +79,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
 
   Future<void> _loadSessions() async {
     try {
-      final jsonString = await rootBundle.loadString("data/presentations.json");
-
-      final decoded = jsonDecode(jsonString) as Map<String, dynamic>;
-
-      final loadedSessions = decoded.entries.map((entry) {
-        return Presentation.fromJson(
-          entry.key,
-          entry.value as Map<String, dynamic>,
-        );
-      }).toList();
+      final loadedSessions = await widget.repository.getPresentations();
 
       loadedSessions.sort((a, b) {
         final aStart = _sessionStartDateTime(a);
@@ -230,9 +230,9 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                 child: GridView.count(
                   physics: const NeverScrollableScrollPhysics(),
                   crossAxisCount: 2,
-                  mainAxisSpacing: 12,
-                  crossAxisSpacing: 12,
-                  childAspectRatio: 1.35,
+                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 10,
+                  childAspectRatio: 1.85,
                   children: [
                     _HomeNavCard(
                       icon: FIcons.calendarDays,
@@ -261,7 +261,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                     _HomeNavCard(
                       icon: FIcons.fileText,
                       title: "Abstracts",
-                      subtitle: "Search posters & talks",
+                      subtitle: "Search talks",
                       onTap: () {
                         Navigator.of(context).push(
                           smoothPageRoute(
@@ -277,6 +277,30 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                       onTap: () {
                         Navigator.of(context).push(
                           smoothPageRoute(builder: (_) => const VenueScreen()),
+                        );
+                      },
+                    ),
+                    _HomeNavCard(
+                      icon: FIcons.star,
+                      title: "Favorites",
+                      subtitle: "Saved sessions",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(
+                            builder: (_) => const FavoritesScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    _HomeNavCard(
+                      icon: FIcons.circleUser,
+                      title: "My Account",
+                      subtitle: "Manage your profile",
+                      onTap: () {
+                        Navigator.of(context).push(
+                          smoothPageRoute(
+                            builder: (_) => const MyAccountScreen(),
+                          ),
                         );
                       },
                     ),
@@ -627,10 +651,13 @@ class _LogoHeroCard extends StatelessWidget {
             child: Container(
               color: Colors.white,
               padding: const EdgeInsets.all(12),
-              child: Image.asset(
-                "assets/images/ICCC_logo.jpg",
-                height: 105,
-                fit: BoxFit.contain,
+              child: Hero(
+                tag: "app-logo",
+                child: Image.asset(
+                  "assets/images/ICCC_logo.jpg",
+                  height: 120,
+                  fit: BoxFit.contain,
+                ),
               ),
             ),
           ),
@@ -660,24 +687,61 @@ class _HomeNavCard extends StatelessWidget {
       onPress: onTap,
       child: FCard(
         mainAxisSize: MainAxisSize.max,
-        title: Row(
-          children: [
-            Icon(icon, size: 22),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
+          child: Row(
+            children: [
+              Container(
+                width: 36,
+                height: 36,
+                decoration: BoxDecoration(
+                  color: Colors.blueAccent.withValues(alpha: 0.18),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(
+                  icon,
+                  size: 20,
+                  color: Colors.white.withValues(alpha: 0.9),
                 ),
               ),
-            ),
-          ],
-        ),
-        child: Text(
-          subtitle,
-          style: TextStyle(color: Colors.white.withValues(alpha: 0.72)),
+
+              const SizedBox(width: 9),
+
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      maxLines: 1,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontSize: 13.5,
+                        height: 1.0,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+
+                    const SizedBox(height: 5),
+
+                    Text(
+                      subtitle,
+                      maxLines: 2,
+                      softWrap: true,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 11,
+                        height: 1.0,
+                        color: Colors.white.withValues(alpha: 0.65),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

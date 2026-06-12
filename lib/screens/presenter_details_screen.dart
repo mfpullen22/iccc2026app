@@ -2,7 +2,8 @@ import "package:flutter/material.dart";
 import "package:iccc2026/models/presentation.dart";
 import "package:iccc2026/models/presenter.dart";
 import "package:iccc2026/repositories/conference_repository.dart";
-import "package:iccc2026/repositories/local_json_conference_repository.dart";
+//import "package:iccc2026/repositories/local_json_conference_repository.dart";
+import "package:iccc2026/repositories/firebase_conference_repository.dart";
 import "package:iccc2026/screens/presentation_details_screen.dart";
 import "package:url_launcher/url_launcher.dart";
 import "package:iccc2026/utils/smooth_page_route.dart";
@@ -11,7 +12,8 @@ class PresenterDetailsScreen extends StatelessWidget {
   const PresenterDetailsScreen({
     super.key,
     required this.presenter,
-    this.repository = const LocalJsonConferenceRepository(),
+    //this.repository = const LocalJsonConferenceRepository(),
+    this.repository = const FirebaseConferenceRepository(),
   });
 
   final Presenter presenter;
