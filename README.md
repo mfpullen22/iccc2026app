@@ -1,7 +1,7 @@
 # ICCC 2026 Conference App
 
 <p align="center">
-  <img src="assets/images/ICCC_logo.jpg" alt="ICCC 2026 Logo" width="220"/>
+  <img src="assets/images/featured_graphic.png" alt="ICCC 2026 Logo" width="220"/>
 </p>
 
 <p align="center">
