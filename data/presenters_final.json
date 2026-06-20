@@ -1086,7 +1086,7 @@
   },
   "presenter156": {
     "id": "presenter156",
-    "firstName": "Li-Ping",
+    "firstName": "Liping",
     "lastName": "Zhu",
     "email": "zhulp@fudan.edu.cn",
     "affiliation": ["Huashan Hospital, Fudan University"]
@@ -1300,5 +1300,26 @@
     "lastName": "Heitman",
     "email": "heitm001@duke.edu",
     "affiliation": ["Duke University"]
+  },
+    "presenter187": {
+    "id": "presenter187",
+    "firstName": "Wieland",
+    "lastName": "Meyer",
+    "email": "w.meyer@wi.knaw.nl",
+    "affiliation": ["Westerdijk Fungal Biodiversity Institute, Royal Netherlands Academy of Arts and Sciences"]
+  },
+    "presenter188": {
+    "id": "presenter188",
+    "firstName": "Marnus",
+    "lastName": "du Plooy",
+    "email": "L.M.du-Plooy@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+    "presenter189": {
+    "id": "presenter189",
+    "firstName": "Orlando",
+    "lastName": "Ross",
+    "email": "or287@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
   }
 }
