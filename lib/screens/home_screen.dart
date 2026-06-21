@@ -199,116 +199,153 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
   @override
   Widget build(BuildContext context) {
     final theme = FTheme.of(context);
-    final screenHeight = MediaQuery.sizeOf(context).height;
-
-    final liveCardHeight = (screenHeight * 0.28).clamp(185.0, 235.0).toDouble();
 
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              _LogoHeroCard(theme: theme),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            const pagePadding = 14.0;
+            const gap = 10.0;
+            const gridSpacing = 10.0;
 
-              const SizedBox(height: 12),
+            final contentWidth = constraints.maxWidth - (pagePadding * 2);
 
-              SizedBox(
-                height: liveCardHeight,
-                child: _LiveSessionsCard(
-                  isLoading: _isLoadingSessions,
-                  errorMessage: _sessionLoadError,
-                  currentSessions: _currentSessions(),
-                  nextSessions: _nextSessions(),
-                  timeLabelBuilder: _sessionTimeLabel,
-                ),
+            // Keep the session card tall enough to prevent its own internal overflow.
+            final liveCardHeight = (constraints.maxHeight * 0.265)
+                .clamp(210.0, 225.0)
+                .toDouble();
+
+            // iPhone 14 Pro needs the logo trimmed slightly, but not dramatically.
+            final logoImageHeight = constraints.maxHeight < 780 ? 104.0 : 112.0;
+
+            final logoEstimatedHeight =
+                logoImageHeight +
+                24 +
+                24; // image + inner padding + outer padding
+
+            final remainingGridHeight =
+                constraints.maxHeight -
+                (pagePadding * 2) -
+                logoEstimatedHeight -
+                liveCardHeight -
+                (gap * 2);
+
+            final singleCardWidth = (contentWidth - gridSpacing) / 2;
+            final singleCardHeight =
+                (remainingGridHeight - (gridSpacing * 2)) / 3;
+
+            final gridAspectRatio = singleCardHeight <= 0
+                ? 2.0
+                : singleCardWidth / singleCardHeight;
+
+            return Padding(
+              padding: const EdgeInsets.all(pagePadding),
+              child: Column(
+                children: [
+                  _LogoHeroCard(theme: theme, imageHeight: logoImageHeight),
+
+                  const SizedBox(height: gap),
+
+                  SizedBox(
+                    height: liveCardHeight,
+                    child: _LiveSessionsCard(
+                      isLoading: _isLoadingSessions,
+                      errorMessage: _sessionLoadError,
+                      currentSessions: _currentSessions(),
+                      nextSessions: _nextSessions(),
+                      timeLabelBuilder: _sessionTimeLabel,
+                    ),
+                  ),
+
+                  const SizedBox(height: gap),
+
+                  Expanded(
+                    child: GridView.count(
+                      physics: const NeverScrollableScrollPhysics(),
+                      crossAxisCount: 2,
+                      mainAxisSpacing: gridSpacing,
+                      crossAxisSpacing: gridSpacing,
+                      childAspectRatio: gridAspectRatio.clamp(1.75, 2.15),
+                      children: [
+                        _HomeNavCard(
+                          icon: FIcons.calendarDays,
+                          title: "Schedule",
+                          subtitle: "View sessions",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const ScheduleScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                        _HomeNavCard(
+                          icon: FIcons.users,
+                          title: "Presenters",
+                          subtitle: "Browse speakers",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const PresentersScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                        _HomeNavCard(
+                          icon: FIcons.fileText,
+                          title: "Abstracts",
+                          subtitle: "Search talks",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const AbstractsScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                        _HomeNavCard(
+                          icon: FIcons.map,
+                          title: "Venue",
+                          subtitle: "Maps & info",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const VenueScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                        _HomeNavCard(
+                          icon: FIcons.star,
+                          title: "Favorites",
+                          subtitle: "Saved sessions",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const FavoritesScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                        _HomeNavCard(
+                          icon: FIcons.circleUser,
+                          title: "My Account",
+                          subtitle: "Manage profile",
+                          onTap: () {
+                            Navigator.of(context).push(
+                              smoothPageRoute(
+                                builder: (_) => const MyAccountScreen(),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-
-              const SizedBox(height: 12),
-
-              Expanded(
-                child: GridView.count(
-                  physics: const NeverScrollableScrollPhysics(),
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 10,
-                  crossAxisSpacing: 10,
-                  childAspectRatio: 1.85,
-                  children: [
-                    _HomeNavCard(
-                      icon: FIcons.calendarDays,
-                      title: "Schedule",
-                      subtitle: "View sessions",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(
-                            builder: (_) => const ScheduleScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                    _HomeNavCard(
-                      icon: FIcons.users,
-                      title: "Presenters",
-                      subtitle: "Browse speakers",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(
-                            builder: (_) => const PresentersScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                    _HomeNavCard(
-                      icon: FIcons.fileText,
-                      title: "Abstracts",
-                      subtitle: "Search talks",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(
-                            builder: (_) => const AbstractsScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                    _HomeNavCard(
-                      icon: FIcons.map,
-                      title: "Venue",
-                      subtitle: "Maps & info",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(builder: (_) => const VenueScreen()),
-                        );
-                      },
-                    ),
-                    _HomeNavCard(
-                      icon: FIcons.star,
-                      title: "Favorites",
-                      subtitle: "Saved sessions",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(
-                            builder: (_) => const FavoritesScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                    _HomeNavCard(
-                      icon: FIcons.circleUser,
-                      title: "My Account",
-                      subtitle: "Manage your profile",
-                      onTap: () {
-                        Navigator.of(context).push(
-                          smoothPageRoute(
-                            builder: (_) => const MyAccountScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+            );
+          },
         ),
       ),
     );
@@ -623,17 +660,18 @@ class _CompactSessionCard extends StatelessWidget {
 }
 
 class _LogoHeroCard extends StatelessWidget {
-  const _LogoHeroCard({required this.theme});
+  const _LogoHeroCard({required this.theme, required this.imageHeight});
 
   final FThemeData theme;
+  final double imageHeight;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(28),
+        borderRadius: BorderRadius.circular(24),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -644,25 +682,20 @@ class _LogoHeroCard extends StatelessWidget {
         ),
         border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
       ),
-      child: Column(
-        children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(18),
-            child: Container(
-              color: Colors.white,
-              padding: const EdgeInsets.all(12),
-              child: Hero(
-                tag: "app-logo",
-                child: Image.asset(
-                  "assets/images/ICCC_logo.jpg",
-                  height: 120,
-                  fit: BoxFit.contain,
-                ),
-              ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(16),
+        child: Container(
+          color: Colors.white,
+          padding: const EdgeInsets.all(10),
+          child: Hero(
+            tag: "app-logo",
+            child: Image.asset(
+              "assets/images/ICCC_logo.jpg",
+              height: imageHeight,
+              fit: BoxFit.contain,
             ),
           ),
-          const SizedBox(height: 12),
-        ],
+        ),
       ),
     );
   }
