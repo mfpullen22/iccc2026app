@@ -15,6 +15,7 @@ class Presentation {
     required this.presenterEmail,
     required this.affiliation,
     required this.presenterId,
+    required this.column,
   });
 
   final String id;
@@ -30,6 +31,7 @@ class Presentation {
   final String presenterEmail;
   final List<String> affiliation;
   final String presenterId;
+  final int column;
 
   factory Presentation.fromJson(String id, Map<String, dynamic> json) {
     return Presentation(
@@ -51,6 +53,7 @@ class Presentation {
               .toList() ??
           [],
       presenterId: json["presenterId"]?.toString().trim() ?? "",
+      column: int.tryParse(json["column"]?.toString() ?? "") ?? 999,
     );
   }
 

@@ -97,6 +97,9 @@ class FirebaseConferenceRepository implements ConferenceRepository {
     final startTimeCompare = a.startTime.compareTo(b.startTime);
     if (startTimeCompare != 0) return startTimeCompare;
 
+    final columnCompare = a.column.compareTo(b.column);
+    if (columnCompare != 0) return columnCompare;
+
     return a.displayTitle.toLowerCase().compareTo(b.displayTitle.toLowerCase());
   }
 }

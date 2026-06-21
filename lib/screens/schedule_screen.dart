@@ -62,6 +62,9 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
       final timeComparison = a.startTime.compareTo(b.startTime);
       if (timeComparison != 0) return timeComparison;
 
+      final columnComparison = a.column.compareTo(b.column);
+      if (columnComparison != 0) return columnComparison;
+
       return a.displayTitle.toLowerCase().compareTo(
         b.displayTitle.toLowerCase(),
       );
@@ -130,7 +133,15 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
       itemCount: startTimes.length,
       itemBuilder: (context, index) {
         final startTime = startTimes[index];
-        final presentationsAtTime = groupedByStartTime[startTime]!;
+        final presentationsAtTime = [...groupedByStartTime[startTime]!]
+          ..sort((a, b) {
+            final columnComparison = a.column.compareTo(b.column);
+            if (columnComparison != 0) return columnComparison;
+
+            return a.displayTitle.toLowerCase().compareTo(
+              b.displayTitle.toLowerCase(),
+            );
+          });
 
         return Padding(
           padding: const EdgeInsets.only(bottom: 12),
