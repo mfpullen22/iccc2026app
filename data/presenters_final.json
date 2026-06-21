@@ -1321,5 +1321,12 @@
     "lastName": "Ross",
     "email": "or287@exeter.ac.uk",
     "affiliation": ["University of Exeter"]
+  },
+    "presenter190": {
+    "id": "presenter190",
+    "firstName": "Conrad",
+    "lastName": "Muzoora",
+    "email": "conradmuzoora@must.ac.ug",
+    "affiliation": ["Mbarara University of Science and Technology"]
   }
 }
