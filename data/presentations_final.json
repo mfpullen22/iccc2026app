@@ -502,10 +502,10 @@
     "day": "1",
     "startTime": "16:35",
     "endTime": "16:50",
-    "presenterId": "presenter116",
-    "presenterFirstName": "Emily",
-    "presenterLastNames": "Prendergast",
-    "presenterEmail": "EPrendergast@witshealth.co.za",
+    "presenterId": "presenter191",
+    "presenterFirstName": "Rhys",
+    "presenterLastNames": "Wenlock",
+    "presenterEmail": "",
     "presenterHeadshot": "",
     "column": 1
   },
@@ -2385,16 +2385,16 @@
     "column": 999
   },
   "pres160": {
-    "title": "ISHAM Pre-Meeting",
+    "title": "Genes, Genomes, and Strains",
     "abstract": "",
     "type": "talk",
     "track": "special",
-    "day": "0",
-    "startTime": "14:00",
-    "endTime": "15:00",
+    "day": "1",
+    "startTime": "13:00",
+    "endTime": "14:45",
     "presenterId": "",
-    "presenterFirstName": "",
-    "presenterLastNames": "",
+    "presenterFirstName": "ISHAM",
+    "presenterLastNames": "Working Group",
     "presenterEmail": "",
     "presenterHeadshot": "",
     "column": 999
@@ -3000,7 +3000,7 @@
     "column": 3
   },
   "pres206": {
-    "title": "",
+    "title": "Genetic and molecular basis of thermal adaptation in Cryptococcus deneoformans",
     "abstract": "",
     "type": "talk",
     "track": "genomics",
@@ -3344,7 +3344,7 @@
     "column": 999
   },
     "pres230": {
-    "title": "",
+    "title": "Rsp5-mediated ubiquitination of a functional analog of the Rim8 arrestin facilitates Rim pathway activation in Cryptococcus neoformans",
     "abstract": "",
     "type": "talk",
     "track": "cellbio",

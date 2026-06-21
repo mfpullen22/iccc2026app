@@ -1328,5 +1328,12 @@
     "lastName": "Muzoora",
     "email": "conradmuzoora@must.ac.ug",
     "affiliation": ["Mbarara University of Science and Technology"]
+  },
+    "presenter191": {
+    "id": "presenter191",
+    "firstName": "Rhys",
+    "lastName": "Wenlock",
+    "email": "",
+    "affiliation": ["Wits Mycology Division, University of the Witwatersrand"]
   }
 }
