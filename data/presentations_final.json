@@ -287,17 +287,17 @@
   "pres20": {
     "title": "Incidence, predictors, and outcomes of re-hospitalisation among adults with HIV-associated cryptococcal meningitis in Uganda: A retrospective cohort study",
     "abstract": "Background and aims: While advances in Cryptococcal meningitis (CM) treatment have improved survival, post-discharge outcomes such as rehospitalisation remain poorly understood. We aimed to determine the incidence, predictors, causes, and outcomes of re-hospitalisation by 10 weeks among adults with HIV/CM. Methods: This was a retrospective cohort study analysing data from four clinical trials conducted between 2017 and 2024 at Mulago, Mbarara, and Kiruddu Hospitals in Uganda. Adults with HIV/CM discharged alive after initial hospitalisation were followed for 10 weeks. Results: Of 1055 patients enrolled in the four clinical trials, 787 were discharged alive. All participants were adults with a median age of 35 years (IQR=30,40). All participants had HIV with a median CD4 cell count of 21 cells/¬µL (IQR=8,58). The majority were male (59%), and 45% were ART-experienced. 209/787 (26.6%) experienced either rehospitalisation or death within 10 weeks. Seventy-six died without rehospitalisation, 25 died after rehospitalisation, 108 were alive by 10 weeks, and 578 had no event. GCS, duration on ART, Haemoglobin, CD4, sodium, CSF opening pressure >200, CSF protein, and CSF WBC were significantly different across the four groups. The median time from initial discharge to rehospitalisation was 20 days (IQR= 10, 36). The major cause of rehospitalisation was CM complications. Only normal GCS was significantly associated with rehospitalisation. However, age, GCS, CD4, haemoglobin and sodium were significantly associated with death. Conclusions: Nearly 3 in every 10 adults with HIV/CM experience rehospitalisation or death within 10 weeks following discharge, with the major cause of rehospitalisation being CM complications.",
-    "type": "poster",
+    "type": "talk",
     "track": "clinicaladv",
-    "day": "",
-    "startTime": "",
-    "endTime": "",
+    "day": "3",
+    "startTime": "17:05",
+    "endTime": "17:20",
     "presenterId": "presenter27",
     "presenterFirstName": "Rhona CB",
     "presenterLastNames": "Muyise",
     "presenterEmail": "muyiserc@gmail.com",
     "presenterHeadshot": "",
-    "column": 999
+    "column": 1
   },
   "pres21": {
     "title": "Missing links to optimise cryptococcosis diagnosis and outcomes in resource-constrained settings",
@@ -1245,7 +1245,7 @@
     "column": 999
   },
   "pres84": {
-    "title": "IL-5R? deletion controls cryptococcal meningoencephalitis development",
+    "title": "IL-5Rα deletion controls cryptococcal meningoencephalitis development",
     "abstract": "Main: Cryptococcal meningoencephalitis (CM) is the result of CNS entrance of Cryptococcus neoformans (CN). Current treatment options are limited and result in long-lasting side-effects post-infection. Better understanding of the host immune response is necessary to develop immunomodulatory treatments. Results: To uncover immunological drivers of CN extrapulmonary dissemination and CNS entrance, we used an intranasal mouse infection model, advanced in vivo microscopic and mesoscopic imaging, proteomics, and transcriptomics to build a 3D spatiotemporal map. We found that pulmonary infection induced eosinophil expansion in the early stage of disease. Degranulating eosinophils were recruited in airways and alveoli, affecting the integrity and morphology of the airway epithelium. Deletion of the eosinophil lineage protein IL-5Rα resulted in lower CNS fungal burden. Mice lacking IL-5Rα had significantly lower expression of proteins associated with eosinophil degranulation, activation, antimicrobial killing, and airway epithelium distress, indicating a detrimental role of eosinophil activation during pulmonary cryptococcosis. Interestingly, IL-5Rα deficiency resulted in an increased IFN-? response during lung infection prior to brain infection, but resulted in lower IFN ? levels once brain i nfection was established. This suggests an ambiguous role of IL-5Rα regulated IFN-? in a time dependent manner during CM development. Future perspectives: We uncover IL-5Rα as novel potential therapeutic target for cryptococcosis. To further develop IL-5Rα targeting as immunomodulatory treatment strategy, we are unravelling the underlying molecular mechanism of IL-5Rα expressing cells through scRNA-seq of bronchoalveolar lavage fluid, blood, and leptomeninges, with data analysis and validation of results with functional in vivo and in vitro experiments currently underway.",
     "type": "talk",
     "track": "immunology",
@@ -2280,8 +2280,8 @@
     "column": 2
   },
   "pres153": {
-    "title": "Decoding Antifungal Resistance Using Proteome-Wide Approaches",
-    "abstract": "Fungal diseases pose a significant and growing threat to global health, particularly as the effectiveness of existing antifungal therapies continues to decline. The widespread emergence of azole resistance driven by prolonged clinical use, environmental fungicide exposure, and fungal adaptation has severely compromised treatment outcomes and underscores the urgent need for new therapeutic strategies. Quantitative proteomics offers a powerful approach to uncover molecular mechanisms underlying antifungal resistance and to identify candidate pathways and targets for intervention. Here, we present an established proteomics-driven framework to define protein-level signatures associated with fluconazole resistance in the opportunistic human fungal pathogen Cryptococcus neoformans. Using this approach, we previously demonstrated that targeting ATP-dependent stress and protein quality-control pathways can restore antifungal susceptibility in resistant strains, with efficacy valida ted in both cellular and in vivo infection models. Mechanistic analyses further revealed links between these pathways and key metabolic processes, including heme biosynthesis and ergosterol production, that influence azole responsiveness. Building on this foundation, we are now applying this validated strategy to investigate additional candidate proteins and pathways with the potential to reverse antifungal resistance, the discovery of compounds that overcome resistance. We are also developing computational and experimental chemoproteomics workflows to define mechanisms of acton for the compounds and assess on- and off-target effects for the design of optimized therapeutics. Collectively, this work highlights the utility of quantitative proteomics as a discovery platform for identifying and prioritizing novel therapeutic targets, and establishes a scalable framework for developing strategies to counteract antifungal drug resistance in clinically relevant fungal.",
+    "title": "From Spectra to Solutions: Proteomics at the Forefront of Fungal Infection, Immunity, and Antifungal Discovery",
+    "abstract": "Fungal diseases affect millions worldwide, spanning superficial infections to life-threatening systemic disease, yet therapeutic options remain limited by host toxicity, restricted drug classes, and the rapid emergence of antifungal resistance. Addressing this growing global challenge requires new ways to understand and disrupt fungal biology. Our research leverages high-resolution, mass spectrometry–based proteomics integrated with computational biology to define the functional drivers of fungal infection in real time. By capturing the dynamic protein landscape at the host–pathogen interface, we uncover actionable biology across four pillars: prevention, diagnostics, monitoring, and treatment. We identify and disrupt critical virulence pathways to prevent infection, define dual host–pathogen protein signatures for precise and early diagnostics, and map infection-driven proteome remodeling to monitor disease progression. Critically, this approach reveals druggable targets and resistance mechanisms, enabling strategies to restore antifungal efficacy and extend the lifespan of existing therapies. Together, this proteomics-driven framework captures functional disease biology, offering a transformative path toward precision antifungal strategies and improved global health outcomes.",
     "type": "talk",
     "track": "cellbio",
     "day": "3",
@@ -3105,7 +3105,7 @@
     "column": 999
   },
   "pres213": {
-    "title": "FungiDB",
+    "title": "FungiDB: Sustaining Genomic-Scale Discovery through Open Access and Community Support",
     "abstract": "",
     "type": "talk",
     "track": "genomics",
