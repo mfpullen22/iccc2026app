@@ -1349,5 +1349,138 @@
     "lastName": "Oh",
     "email": "",
     "affiliation": ["Yonsei University"]
+  },
+    "presenter194": {
+    "id": "presenter194",
+    "firstName": "Iana",
+    "lastName": "Kalinina",
+    "email": "I.Kalinina@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+    "presenter195": {
+    "id": "presenter195",
+    "firstName": "Lilitha",
+    "lastName": "Cengani",
+    "email": "",
+    "affiliation": ["University of Cape Town"]
+  },
+    "presenter196": {
+    "id": "presenter196",
+    "firstName": "Ricardo Alexadre Frois",
+    "lastName": "Martins",
+    "email": "r.froismartins@birmingham.ac.uk",
+    "affiliation": ["University of Birmingham"]
+  },
+    "presenter197": {
+    "id": "presenter197",
+    "firstName": "Suelen Andreia",
+    "lastName": "Rossi",
+    "email": "",
+    "affiliation": ["Carlos Chagas Institute"]
+  },
+    "presenter198": {
+    "id": "presenter198",
+    "firstName": "Juliana da Silva",
+    "lastName": "Pacheco",
+    "email": "j.z.dasilvapacheco@dundee.ac.uk",
+    "affiliation": ["University of Dundee"]
+  },
+    "presenter199": {
+    "id": "presenter199",
+    "firstName": "Teresa",
+    "lastName": "Pissarro",
+    "email": "t.pissarro@itqb.unl.pt",
+    "affiliation": ["Instituto de Tecnologia Química e Biológica, Universidade Nova de Lisboa"]
+  },
+    "presenter200": {
+    "id": "presenter200",
+    "firstName": "Krishna",
+    "lastName": "Bhat",
+    "email": "krishnabhat@jncasr.in",
+    "affiliation": ["Jawaharlal Nehru Centre for Advanced Scientific Research"]
+  },
+    "presenter201": {
+    "id": "presenter201",
+    "firstName": "Vishnu Priya",
+    "lastName": "Krishnan",
+    "email": "vkrishn3@ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+    "presenter202": {
+    "id": "presenter202",
+    "firstName": "Connor",
+    "lastName": "Larmore",
+    "email": "connor.larmore@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+    "presenter203": {
+    "id": "presenter203",
+    "firstName": "Shiyon Anto",
+    "lastName": "Vadakkan",
+    "email": "s2859007@sms.ed.ac.uk",
+    "affiliation": ["University of Edinburgh"]
+  },
+    "presenter204": {
+    "id": "presenter204",
+    "firstName": "Meiqing",
+    "lastName": "Shi",
+    "email": "mshi@umd.edu",
+    "affiliation": ["University of Maryland"]
+  },
+    "presenter205": {
+    "id": "presenter205",
+    "firstName": "Miranda",
+    "lastName": "Lumbreras",
+    "email": "miranda.lumbreras@duke.edu",
+    "affiliation": ["Duke University"]
+  },
+    "presenter206": {
+    "id": "presenter206",
+    "firstName": "Charlie",
+    "lastName": "Holt",
+    "email": "",
+    "affiliation": ["University of Exeter"]
+  },
+    "presenter207": {
+    "id": "presenter207",
+    "firstName": "Flavia Coelho Garcia dos",
+    "lastName": "Reis",
+    "email": "",
+    "affiliation": ["Instituto Carlos Chagas"]
+  },
+    "presenter208": {
+    "id": "presenter208",
+    "firstName": "Haroldo Cesar de",
+    "lastName": "Oliveira",
+    "email": "",
+    "affiliation": ["Federal University of Sao Paulo"]
+  },
+    "presenter209": {
+    "id": "presenter209",
+    "firstName": "Jagdish",
+    "lastName": "Chander",
+    "email": "jchander@gmch.gov.in",
+    "affiliation": ["Government Medical College Hospital"]
+  },
+    "presenter210": {
+    "id": "presenter210",
+    "firstName": "Grace J.",
+    "lastName": "Paul",
+    "email": "",
+    "affiliation": ["University of Exeter"]
+  },
+    "presenter211": {
+    "id": "presenter211",
+    "firstName": "Freya",
+    "lastName": "Cardozo",
+    "email": "",
+    "affiliation": ["Indian Institute of Science"]
+  },
+    "presenter212": {
+    "id": "presenter212",
+    "firstName": "Irene Molina",
+    "lastName": "Privado",
+    "email": "",
+    "affiliation": ["Global Health Medicines R&D, GSK,"]
   }
 }
