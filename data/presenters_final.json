@@ -1335,5 +1335,19 @@
     "lastName": "Wenlock",
     "email": "",
     "affiliation": ["Wits Mycology Division, University of the Witwatersrand"]
+  },
+    "presenter192": {
+    "id": "presenter192",
+    "firstName": "Nicholas",
+    "lastName": "Helmstetter",
+    "email": "N.Helmstetter@exeter.ac.uk",
+    "affiliation": ["University of Exeter"]
+  },
+    "presenter193": {
+    "id": "presenter193",
+    "firstName": "Jeeseok",
+    "lastName": "Oh",
+    "email": "",
+    "affiliation": ["Yonsei University"]
   }
 }
